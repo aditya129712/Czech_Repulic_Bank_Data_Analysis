@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://app.snowflake.com/houdric/vq62433/w1wwABCa4YJl/query -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #444;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; left: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-highlightSpace:before {content: attr(data-display); position: absolute; pointer-events: none; color: #888;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-diagnostic {padding: 3px 6px 3px 8px; margin-left: -1px; display: block; white-space: pre-wrap;}
+.ͼ1 .cm-diagnostic-error {border-left: 5px solid #d11;}
+.ͼ1 .cm-diagnostic-warning {border-left: 5px solid orange;}
+.ͼ1 .cm-diagnostic-info {border-left: 5px solid #999;}
+.ͼ1 .cm-diagnosticAction {font: inherit; border: none; padding: 2px 4px; background-color: #444; color: white; border-radius: 3px; margin-left: 8px;}
+.ͼ1 .cm-diagnosticSource {font-size: 70%; opacity: 0.7;}
+.ͼ1 .cm-lintRange {background-position: left bottom; background-repeat: repeat-x; padding-bottom: 0.7px;}
+.ͼ1 .cm-lintRange-error {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="3">%3Cpath%20d%3D%22m0%202.5%20l2%20-1.5%20l1%200%20l2%201.5%20l1%200%22%20stroke%3D%22%23d11%22%20fill%3D%22none%22%20stroke-width%3D%22.7%22%2F%3E</svg>');}
+.ͼ1 .cm-lintRange-warning {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="3">%3Cpath%20d%3D%22m0%202.5%20l2%20-1.5%20l1%200%20l2%201.5%20l1%200%22%20stroke%3D%22orange%22%20fill%3D%22none%22%20stroke-width%3D%22.7%22%2F%3E</svg>');}
+.ͼ1 .cm-lintRange-info {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="3">%3Cpath%20d%3D%22m0%202.5%20l2%20-1.5%20l1%200%20l2%201.5%20l1%200%22%20stroke%3D%22%23999%22%20fill%3D%22none%22%20stroke-width%3D%22.7%22%2F%3E</svg>');}
+.ͼ1 .cm-lintRange-active {background-color: #ffdd9980;}
+.ͼ1 .cm-tooltip-lint {padding: 0; margin: 0;}
+.ͼ1 .cm-lintPoint:after {content: ""; position: absolute; bottom: 0; left: -2px; border-left: 3px solid transparent; border-right: 3px solid transparent; border-bottom: 4px solid #d11;}
+.ͼ1 .cm-lintPoint {position: relative;}
+.ͼ1 .cm-lintPoint-warning:after {border-bottom-color: orange;}
+.ͼ1 .cm-lintPoint-info:after {border-bottom-color: #999;}
+.ͼ1 .cm-panel.cm-panel-lint ul [aria-selected] u {text-decoration: underline;}
+.ͼ1 .cm-panel.cm-panel-lint ul [aria-selected] {background-color: #ddd;}
+.ͼ1 .cm-panel.cm-panel-lint ul:focus [aria-selected] {background: #bdf; background-color: Highlight; color: white; color: HighlightText;}
+.ͼ1 .cm-panel.cm-panel-lint ul u {text-decoration: none;}
+.ͼ1 .cm-panel.cm-panel-lint ul {max-height: 100px; overflow-y: auto; padding: 0; margin: 0;}
+.ͼ1 .cm-panel.cm-panel-lint [name=close] {position: absolute; top: 0; right: 2px; background: inherit; border: none; font: inherit; padding: 0; margin: 0;}
+.ͼ1 .cm-panel.cm-panel-lint {position: relative;}
+.ͼ1 .error-highlight {background: #ffe6ab;}
+.ͼ1 .executed-highlight {background: #f0f4ff;}
+.ͼ1 .executed-line {border-left: #457cff 4px solid; width: 4px; height: 100%;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li {overflow-x: hidden; text-overflow: ellipsis; cursor: pointer; padding: 1px 3px; line-height: 1.2;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: monospace; white-space: nowrap; overflow: hidden auto; max-width: 700px; max-width: min(700px, 95vw); min-width: 250px; max-height: 10em; list-style: none; margin: 0; padding: 0;}
+.ͼ2 .cm-tooltip-autocomplete ul li[aria-selected] {background: #17c; color: white;}
+.ͼ3 .cm-tooltip-autocomplete ul li[aria-selected] {background: #347; color: white;}
+.ͼ1 .cm-completionListIncompleteTop:before, .ͼ1 .cm-completionListIncompleteBottom:after {content: "···"; opacity: 0.5; display: block; text-align: center;}
+.ͼ1 .cm-tooltip.cm-completionInfo {position: absolute; padding: 3px 9px; width: max-content; max-width: 400px; box-sizing: border-box;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left {right: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right {left: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left-narrow {right: 30px;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right-narrow {left: 30px;}
+.ͼ2 .cm-snippetField {background-color: #00000022;}
+.ͼ3 .cm-snippetField {background-color: #ffffff22;}
+.ͼ1 .cm-snippetFieldPosition {vertical-align: text-top; width: 0; height: 1.15em; display: inline-block; margin: 0 -0.7px -.7em; border-left: 1.4px dotted #888;}
+.ͼ1 .cm-completionMatchedText {text-decoration: underline;}
+.ͼ1 .cm-completionDetail {margin-left: 0.5em; font-style: italic;}
+.ͼ1 .cm-completionIcon {font-size: 90%; width: .8em; display: inline-block; text-align: center; padding-right: .6em; opacity: 0.6;}
+.ͼ1 .cm-completionIcon-function:after, .ͼ1 .cm-completionIcon-method:after {content: 'ƒ';}
+.ͼ1 .cm-completionIcon-class:after {content: '○';}
+.ͼ1 .cm-completionIcon-interface:after {content: '◌';}
+.ͼ1 .cm-completionIcon-variable:after {content: '𝑥';}
+.ͼ1 .cm-completionIcon-constant:after {content: '𝐶';}
+.ͼ1 .cm-completionIcon-type:after {content: '𝑡';}
+.ͼ1 .cm-completionIcon-enum:after {content: '∪';}
+.ͼ1 .cm-completionIcon-property:after {content: '□';}
+.ͼ1 .cm-completionIcon-keyword:after {content: '🔑︎';}
+.ͼ1 .cm-completionIcon-namespace:after {content: '▢';}
+.ͼ1 .cm-completionIcon-text:after {content: 'abc'; font-size: 50%; vertical-align: middle;}
+.ͼ1 .cm-tooltip {z-index: 100; box-sizing: border-box;}
+.ͼ2 .cm-tooltip {border: 1px solid #bbb; background-color: #f5f5f5;}
+.ͼ2 .cm-tooltip-section:not(:first-child) {border-top: 1px solid #bbb;}
+.ͼ3 .cm-tooltip {background-color: #333338; color: white;}
+.ͼ1 .cm-tooltip-arrow:before, .ͼ1 .cm-tooltip-arrow:after {content: ''; position: absolute; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:before {border-top: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:after {border-top: 7px solid #f5f5f5; bottom: 1px;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow {bottom: -7px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:before {border-bottom: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:after {border-bottom: 7px solid #f5f5f5; top: 1px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow {top: -7px;}
+.ͼ1 .cm-tooltip-arrow {height: 7px; width: 14px; position: absolute; z-index: -1; overflow: hidden;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:before {border-top-color: #333338; border-bottom-color: #333338;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:after {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼ1 .cm-selectionMatch {background-color: #99ff7780;}
+.ͼ1 .cm-searchMatch .cm-selectionMatch {background-color: transparent;}
+.ͼ1 .cm-panel.cm-search [name=close] {position: absolute; top: 0; right: 4px; background-color: inherit; border: none; font: inherit; padding: 0; margin: 0;}
+.ͼ1 .cm-panel.cm-search input, .ͼ1 .cm-panel.cm-search button, .ͼ1 .cm-panel.cm-search label {margin: .2em .6em .2em 0;}
+.ͼ1 .cm-panel.cm-search input[type=checkbox] {margin-right: .2em;}
+.ͼ1 .cm-panel.cm-search label {font-size: 80%; white-space: pre;}
+.ͼ1 .cm-panel.cm-search {padding: 2px 6px 4px; position: relative;}
+.ͼ2 .cm-searchMatch {background-color: #ffff0054;}
+.ͼ3 .cm-searchMatch {background-color: #00ffff8a;}
+.ͼ2 .cm-searchMatch-selected {background-color: #ff6a0054;}
+.ͼ3 .cm-searchMatch-selected {background-color: #ff00ff8a;}
+.ͼ7 {width: 100%; height: 100%;}
+.ͼ7 .cm-scroller {color: #484d52; background: transparent; font-size: 13.5px; line-height: 18px; font-family: apercu-mono-regular, Menlo, Monaco, Consolas, 'Courier New', monospace; font-variant-ligatures: none;}
+.ͼ7 .cm-panels-top {z-index: 1; border: none;}
+.ͼ7 .cm-search-container {box-shadow: 0 2px 8px #00000026; border-radius: 6px; background-color: white; position: absolute; right: 20px; top: 0;}
+.ͼ7 .cm-search-container:first-child {border-radius: 6px;}
+.ͼ7 .cm-tooltip-autocomplete.cm-tooltip > ul {border-radius: 6px; max-height: 15em; min-width: 200px;}
+.ͼ7 .cm-content {width: 0;}
+.ͼ7.cm-editor.cm-content {color: #484d52; background: transparent; font-size: 13.5px; line-height: 18px; font-family: apercu-mono-regular, Menlo, Monaco, Consolas, 'Courier New', monospace; font-variant-ligatures: none;}
+.ͼ7.cm-editor.cm-focused {outline: none;}
+.ͼ7 .cm-placeholder {color: #65676c;}
+.ͼ7 .cm-line {padding-left: 8px;}
+.ͼ7 .cm-gutters {background-color: white; border-right: 0;}
+.ͼ7 .cm-lineNumbers {font-size: 13px; color: #65676c; cursor: default; top: 1px; padding-left: 22px; padding-right: 26px; border-right: 1px solid #f5f7fa;}
+.ͼ7 .cm-activeLineGutter {background: none; color: #1a1d21;}
+.ͼ7 .cm-activeLine {background: none;}
+.ͼ7 .cm-matchingBracket {color: #2c2f34; background: rgba(0, 0, 0, 0.1); border-radius: 2px;}
+.ͼ7.cm-focused .cm-matchingBracket {background-color: rgba(0, 0, 0, 0.1);}
+.ͼ7 .cm-nonmatchingBracket {color: #484d52;}
+.ͼ7 .cm-tooltip-autocomplete.cm-tooltip {box-shadow: 0 2px 8px #00000026; border-radius: 6px; max-height: 408px; z-index: 1001; background: var(--inverse-gray20); border: 1px solid var(--inverse-gray30); padding: 0; margin-left: -17px; font-style: inherit; font-family: Inter; font-size: 14px;}
+.ͼ7 .cm-tooltip-autocomplete.cm-tooltip ul li {white-space: normal; border-top: 1px solid transparent; border-bottom: 1px solid transparent; padding-top: 12px; line-height: 1.1; padding-bottom: 12px; padding-left: 18px; padding-right: 13px; font-variant-ligatures: none; font-family: Inter; color: var(--inverse-black); position: relative;}
+.ͼ7 .cm-tooltip-autocomplete.cm-tooltip ul li:first-child {transform: translate(0px, -1px);}
+.ͼ7 .cm-tooltip-autocomplete.cm-tooltip ul li:last-child {border-bottom: none;}
+.ͼ7 .cm-tooltip-autocomplete ul li[aria-selected] {background: white; border-top: 1px solid var(--inverse-gray30); border-bottom: 1px solid var(--inverse-gray30);}
+.ͼ7 .cm-tooltip-autocomplete ul li[aria-selected]:before {content: ""; background: #1a6ce7; top: 0; left: 0; position: absolute; height: 100%; width: 5px;}
+.ͼ7 .cm-tooltip {background-color: white;}
+.ͼ7 .cm-tooltip .cm-signature-activeParameter {font-weight: bold; color: var(--inverse-blue50);}
+.ͼ7 .cm-tooltip-hover {background-color: transparent; border: none;}
+.ͼ7 .cm-tooltip-hover > .hover-scroll, .ͼ7 .cm-tooltip-hover .cm-diagnostic {box-shadow: 0 2px 8px #00000026; border-radius: 6px; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; overflow: hidden; background-color: white; padding: 6px 13px 6px 13px;}
+.ͼ7 .cm-tooltip-lint {color: #484d52; background: transparent; font-size: 13.5px; line-height: 18px; font-family: apercu-mono-regular, Menlo, Monaco, Consolas, 'Courier New', monospace; font-variant-ligatures: none; box-shadow: 0 2px 8px #00000026; border-radius: 6px; border: 1px solid var(--inverse-gray30);}
+.ͼ7 .cm-tooltip.cm-completionInfo, .ͼ7 .cm-tooltip-hover .hover-scroll {box-shadow: 2px 2px 8px #00000026; border-radius: 6px; border: 1px solid var(--inverse-gray30); color: var(--inverse-gray70); display: block; font-family: Inter; font-size: 13px; font-style: normal; margin-left: 0; margin-right: 0; max-height: 320px; min-width: 250px; max-width: 430px; overflow: auto; padding: 6px 13px 6px 13px; transform: translateY(-1px);}
+.ͼ7 .cm-tooltip.cm-completionInfo[style*=" height"] {max-height: unset !important;}
+.ͼ7 .cm-tooltip.cm-completionInfo[style*=" width"] {max-width: unset !important;}
+.ͼ7 .cm-tooltip-autocomplete-info code, .ͼ7 .cm-tooltip-hover code {font-family: apercu-mono-regular, Menlo, Monaco, Consolas, 'Courier New', monospace; color: var(--inverse-gray90); font-size: 13px; white-space: pre-wrap;}
+.ͼ7 .cm-tooltip-autocomplete-info pre:first-of-type {margin-top: 8px;}
+.ͼ7 .cm-tooltip-autocomplete-info p:last-of-type {margin-bottom: 8px;}
+.ͼ7 .cm-tooltip-autocomplete-info hr:first-of-type {border-top: var(--inverse-gray30); border-left: none; border-right: none;}
+.ͼ7 .cm-completionIcon {display: none;}
+.ͼ7 .cm-completionLabel {display: block; font-family: apercu-mono-regular, Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 13.5px;}
+.ͼ7 .cm-selectionBackground {transform: translateY(-2px); padding-top: 2px; padding-bottom: 2px;}
+.ͼ7.cm-focused  .cm-selectionBackground {background: rgba(171,215,255,.8);}
+.ͼ7 .cm-selectionMatch {background-color: var(--inverse-blue05);}
+.ͼ7 .cm-lintRange {padding-bottom: 1.7px;}
+.ͼ7 .cm-lintRange-error {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3">%3Ccircle%20cx%3D%221.5%22%20cy%3D%221.5%22%20r%3D%220.65%22%20fill%3D%22var(--inverse-red40)%22%2F%3E</svg>');}
+.ͼ7 .cm-lintRange-info {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3">%3Ccircle%20cx%3D%221.5%22%20cy%3D%221.5%22%20r%3D%220.65%22%20fill%3D%22var(--inverse-gray60)%22%2F%3E</svg>');}
+.ͼ7 .cm-lintRange-warning {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3">%3Ccircle%20cx%3D%221.5%22%20cy%3D%221.5%22%20r%3D%220.65%22%20fill%3D%22var(--inverse-gray60)%22%2F%3E</svg>');}
+.ͼ7 .cm-lintPoint-error:after {border-bottom: 6px solid var(--inverse-red30); bottom: -3px; left: -6px;}
+.ͼ7 .desclink:link, .ͼ7 .desclink:visited {color: var(--inverse-gray70); text-decoration: underline;}
+.ͼ7 .desclink:hover {color: var(--inverse-blue60);}
+.ͼ7 .active-handler {background-color: transparent; border-color: var(--inverse-yellow80); border-width: 1px; border-style: solid; border-radius: 6px; padding: 2px 4px;}
+.ͼ7 .active-handler-tooltip.hover-scroll {border-left-color: var(--inverse-yellow80); border-left-width: 5px; border-left-style: solid;}
+.ͼ7 .tok-builtin {color: var(--inverse-green80);}
+.ͼ7 .tok-comment {color: var(--inverse-gray50);}
+.ͼ7 .tok-controlKeyword {color: #914e97;}
+.ͼ7 .tok-variableName {color: #c926af;}
+.ͼ7 .tok-keyword {color: var(--inverse-blue60);}
+.ͼ7 .tok-name {color: var(--inverse-gray80);}
+.ͼ7 .tok-functionName.tok-variableName {color: var(--inverse-yellow80);}
+.ͼ7 .tok-number {color: var(--inverse-green80);}
+.ͼ7 .tok-string2 {color: var(--inverse-green80);}
+.ͼ7 .tok-string {color: var(--inverse-red80);}
+.ͼ7 .tok-typeName {color: #0a7c7c;}
+.ͼ7 .tok-specialVariable {color: var(--inverse-yellow80);}
+.ͼ7 .typetag {color: #b7009f;}
+.ͼ7 .typetag.typetag-alias {color: #a94600;}
+.ͼ7 .typetag.typetag-function {color: #007355;}
+.ͼ7 .typetag.typetag-keyword {color: #005dd7;}
+.ͼ7 .typetag.typetag-joinSuggestion {color: #005dd7;}
+.ͼ7 .typetag.typetag-filter {color: #7b6100;}
+.ͼ7 .typetag.typetag-as {color: #a94600;}
+.ͼ4 .cm-line ::selection {background-color: transparent !important;}
+.ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+</style><style data-merge-styles="true"></style><style data-merge-styles="true"></style><style data-merge-styles="true"></style><title>Bank_Czech_Data - Snowflake</title><link rel="icon" type="image/png" href="https://app.snowflake.com/static/favicon-16.png" sizes="16x16"><link rel="icon" type="image/png" href="https://app.snowflake.com/static/favicon-32.png" sizes="32x32"><link rel="icon" type="image/png" href="https://app.snowflake.com/static/favicon-48.png" sizes="48x48"><link rel="icon" type="image/png" href="https://app.snowflake.com/static/favicon-96.png" sizes="96x96"><link rel="icon" type="image/png" href="https://app.snowflake.com/static/favicon-144.png" sizes="144x144"><meta name="viewport" content="width=device-width"><link href="./Bank_Czech_Data - Snowflake_files/styles.230822-12-e64f65f24d.css" rel="stylesheet"><style type="text/css">.icon-button {
+  border-radius: 3px;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.05));
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #c6c6c6; }
+  .icon-button svg {
+    height: 100%;
+    margin: auto;
+    display: block; }
+
+.icon-button:hover {
+  background-color: #ededed; }
+
+.icon-button:active {
+  background-color: #e4e4e4; }
+
+.icon-button.disabled {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #d9d9d9;
+  cursor: default !important; }
+
+.icon-button.disabled,
+.icon-button.disabled:hover,
+.icon-button.disabled:active {
+  background-color: #f8f8f8; }
+
+.icon-button.disabled svg {
+  opacity: 0.3; }
+
+.newUI .icon-button {
+  background: #fcfcfc;
+  border: 1px solid #e2e3e5;
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: none;
+  color: #3f4246;
+  cursor: pointer;
+  fill: #3f4246;
+  stroke: #3f4246; }
+
+.newUI .icon-button:hover {
+  background: #fafafa; }
+
+.newUI .disabled .icon-button {
+  background: #f2f2f2;
+  color: #aeb0b3;
+  fill: #aeb0b3;
+  stroke: #aeb0b3; }
+</style><style type="text/css">b, strong {
+  font-weight: 600 !important; }
+
+.node-list-container {
+  display: flex;
+  flex-direction: column;
+  background: #fbfbfb;
+  font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  width: 220px;
+  padding: 0;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 3px; }
+
+.node-list-header {
+  font-size: 13px;
+  background-color: #959595;
+  height: 42px;
+  min-height: 43px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 3px;
+  border-left: 1px solid #959595;
+  border-right: 1px solid #959595;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box; }
+  .node-list-header--open {
+    border-radius: 3px 3px 0 0; }
+  .node-list-header:hover {
+    cursor: pointer !important; }
+
+.node-list-header-text {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column; }
+
+.node-list-header-count {
+  font-size: 10px;
+  font-style: oblique;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #d9d9d9; }
+
+.node-list-list {
+  margin: 0;
+  padding: 0;
+  max-height: 370px;
+  overflow-y: auto; }
+  .node-list-list--open {
+    border-bottom: 1px solid #c6c6c6;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
+
+.node-list-list::-webkit-scrollbar {
+  height: 6px;
+  overflow: visible;
+  width: 10px; }
+
+.node-list-list::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 1px 2px 1px 2px;
+  padding: 100px 0;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05); }
+
+.node-list-list::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 0 0 0 4px; }
+
+.node-list-message {
+  color: #a6a6a6;
+  font-style: italic;
+  font-size: 12px;
+  padding: 8px;
+  border-bottom: 1px solid #fafafa;
+  border-left: 1px solid white; }
+
+.node-list-arrow {
+  padding-bottom: 10px; }
+
+.node-list-arrow--open {
+  padding-bottom: 16px; }
+</style><style type="text/css">b, strong {
+  font-weight: 600 !important; }
+
+.node-list-item {
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  color: #4a4a4a;
+  border-top: 1px solid #fbfbfb;
+  border-bottom: 1px solid #f2f2f2;
+  border-left: 1px solid #c6c6c6;
+  border-right: 1px solid #c6c6c6; }
+  .node-list-item--selected {
+    background-color: #ecf5fe !important;
+    border: solid 1px #4990e2 !important; }
+  .node-list-item:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: solid 1px #b9b9b9; }
+</style><style type="text/css">b, strong {
+  font-weight: 600 !important; }
+
+.collapsible--flag:hover ~ .toggle-collapse {
+  opacity: 1; }
+
+.collapsible.collapsed {
+  overflow: hidden; }
+
+.toggle-collapse {
+  font-size: 8px; }
+
+.toggle-collapse-dropdown {
+  font-size: 12px;
+  margin-left: 4px;
+  cursor: pointer;
+  line-height: 1.5; }
+
+.toggle-collapse span {
+  font-size: 12px;
+  margin-left: 4px;
+  cursor: pointer;
+  line-height: 1.5; }
+
+.toggle-collapse span:hover {
+  text-decoration: underline; }
+
+.collapsible.collapsed.collapsible-expression {
+  border-bottom: solid 1px #d3d3d3;
+  border-radius: 4px; }
+
+.collapsible.collapsed.collapsible-expression::after {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0) 30%);
+  pointer-events: none;
+  /* so the text is still selectable */
+  width: 98%;
+  position: absolute;
+  left: 2px; }
+
+.toggle-collapse-animation {
+  opacity: 0;
+  transition: 200ms ease-in;
+  top: -35px;
+  left: 88px;
+  width: 75px;
+  position: relative; }
+  .toggle-collapse-animation:hover {
+    opacity: 1; }
+
+.toggle-collapse-button {
+  font-size: 12px;
+  font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  position: relative;
+  border-radius: 100px;
+  width: 136px;
+  height: 28px;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #4a4a4a;
+  border-color: #4a4a4a;
+  /* center text */
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .toggle-collapse-button:focus {
+    outline: 0; }
+  .toggle-collapse-button:hover {
+    cursor: pointer; }
+
+.toggle-collapse-dropdown {
+  display: flex; }
+  .toggle-collapse-dropdown:hover {
+    cursor: pointer; }
+  .toggle-collapse-dropdown--arrow {
+    margin-right: 4px; }
+
+.collapsible.collapsed.single-line {
+  position: relative; }
+</style><style type="text/css">.label-root {
+  line-height: 1.5; }
+
+.label-root.inline-label .label-name {
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+  margin-top: 5px; }
+
+.label-root.inline-label .label-value {
+  float: right;
+  margin-right: 20px; }
+
+.label-value-expression {
+  font-family: Nitti, monospace;
+  word-wrap: break-word;
+  border: solid 1px #d3d3d3;
+  border-radius: 4px;
+  padding: 8px 8px;
+  background-color: #fdfdfd;
+  color: #2e2e2e;
+  line-height: 1.5; }
+  .label-value-expression:hover {
+    cursor: pointer; }
+</style><style type="text/css">.label-panel {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 8px;
+  margin-bottom: 0px; }
+  .label-panel .label-name {
+    display: block;
+    color: #808080;
+    margin-bottom: 6px; }
+  .label-panel .label-value {
+    /* commented for testing: let's see how long expressions work */
+    /*word-break: break-all;*/
+    display: block; }
+</style><style type="text/css">.stat-panel .stat-group {
+  margin-top: 16px;
+  line-height: 1.5; }
+  .stat-panel .stat-group .stat-group-header {
+    color: #4a4a4a; }
+  .stat-panel .stat-group .stat-group-body {
+    margin-top: 0px; }
+    .stat-panel .stat-group .stat-group-body .stat-value {
+      float: right; }
+    .stat-panel .stat-group .stat-group-body .stat-name {
+      color: #808080;
+      width: auto;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+</style><style type="text/css">.wait-panel .bar {
+  margin-top: 8px;
+  line-height: 1.5; }
+
+.wait-panel .bar-segments {
+  width: auto;
+  overflow: hidden; }
+
+.wait-panel .bar-totals {
+  float: right;
+  font-weight: 600;
+  padding-left: 4px; }
+
+.wait-panel .bar-segment {
+  height: 10px;
+  display: inline-block; }
+
+.wait-panel .bar-segment.first {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.wait-panel .bar-segment.last {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.wait-panel .legend {
+  padding-left: 0px;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0; }
+
+.wait-panel .legend-item {
+  list-style: none; }
+
+.wait-panel .legend-item .color {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  float: left;
+  margin-top: 5px; }
+
+.wait-panel .legend-item .name {
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 8px;
+  color: #808080; }
+
+.wait-panel .legend-item .value {
+  float: right; }
+</style><style type="text/css">.edge-info .expressions {
+  list-style: none;
+  line-height: 24px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  word-break: break-all; }
+
+.edge-info .detail-body {
+  padding-top: 12px !important; }
+</style><style type="text/css">b, strong {
+  font-weight: 600 !important; }
+
+.query-plan-detail {
+  font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  .query-plan-detail pre {
+    border: none;
+    margin: 0; }
+  .query-plan-detail .detail-header {
+    background: #ecf5fe;
+    padding: 10px 12px;
+    font-size: 16px; }
+  .query-plan-detail .detail-body {
+    font-size: 12px;
+    padding: 0 12px 12px 12px; }
+  .query-plan-detail .group-header {
+    padding-top: 16px;
+    font-weight: 600;
+    color: #4a4a4a; }
+  .query-plan-detail .placeholder {
+    padding: 12px 0px 0 0px;
+    color: #808080;
+    font-size: 12px;
+    line-height: 1.5; }
+  .query-plan-detail ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px; }
+  .query-plan-detail .stat-uom {
+    min-width: 20px;
+    display: inline-block;
+    padding-left: 4px; }
+  .query-plan-detail .divider {
+    height: 16px;
+    border-bottom: 1px solid #e8e8e8; }
+</style><style type="text/css">b,
+strong {
+  font-weight: 600 !important; }
+
+.query-plan-graph {
+  cursor: crosshair; }
+  .query-plan-graph text {
+    font-weight: 300;
+    font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    fill: #4a4a4a; }
+  .query-plan-graph .edgeLabel text {
+    font-size: 11px; }
+  .query-plan-graph .node,
+  .query-plan-graph .edgePath,
+  .query-plan-graph .edgeLabel {
+    cursor: pointer !important; }
+  .query-plan-graph .node rect,
+  .query-plan-graph .edgePath path,
+  .query-plan-graph .edgeLabel rect {
+    stroke: #cccccc; }
+  .query-plan-graph .node.active > rect,
+  .query-plan-graph .edgePath.active path,
+  .query-plan-graph .edgeLabel.active rect {
+    stroke: #999999; }
+  .query-plan-graph .node.active > rect {
+    fill: #faf9f9; }
+  .query-plan-graph .node.selected > rect,
+  .query-plan-graph .edgePath.selected path,
+  .query-plan-graph .edgeLabel.selected rect {
+    stroke: #4a90e2;
+    fill: #ecf5fe; }
+  .query-plan-graph marker rect {
+    fill: #fff; }
+  .query-plan-graph marker path {
+    fill: #cccccc; }
+  .query-plan-graph marker.active path {
+    fill: #999999 !important; }
+  .query-plan-graph marker.selected path {
+    fill: #4a90e2 !important; }
+  .query-plan-graph .edgePath path {
+    stroke-width: 2; }
+  .query-plan-graph .node rect,
+  .query-plan-graph .edgeLabel rect {
+    fill: white; }
+  .query-plan-graph .query-plan {
+    width: 100%;
+    height: 100%; }
+  .query-plan-graph svg rect.reset-zoom {
+    fill: lightgrey;
+    stroke: rgba(0, 0, 0, 0.2);
+    stroke-width: 1; }
+  .query-plan-graph .node-body {
+    font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 13px;
+    color: #4a4a4a; }
+  .query-plan-graph .node-header {
+    padding: 8px 8px 0 8px; }
+  .query-plan-graph .node-header div {
+    overflow: hidden;
+    width: auto;
+    text-overflow: ellipsis; }
+  .query-plan-graph .node-header span {
+    float: right; }
+  .query-plan-graph .node-detail {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 4px 8px 0 8px;
+    font-size: 11px;
+    color: #75767a;
+    line-height: 1.2; }
+  .query-plan-graph .node-value {
+    height: 8px;
+    margin: 14px 8px 0 8px;
+    border-radius: 4px;
+    border: 1px solid #efefef;
+    overflow: hidden;
+    background-color: white; }
+  .query-plan-graph .node-value .value {
+    background: #ffa742;
+    height: 100%; }
+  .query-plan-graph .zoom-control {
+    cursor: pointer;
+    width: 30px;
+    height: 30px; }
+  .query-plan-graph .zoom-in {
+    margin-bottom: 2px; }
+  .query-plan-graph .zoom-reset {
+    margin-bottom: 26px; }
+  .query-plan-graph .node-list {
+    position: absolute;
+    top: 14px;
+    right: 14px; }
+
+.newUI .query-plan-graph {
+  cursor: move; }
+
+.newUI .query-plan-graph .node-header {
+  line-height: 16px;
+  padding: 12px 16px 0; }
+
+.newUI .query-plan-graph .node-detail {
+  line-height: 16px;
+  padding: 8px 16px 0; }
+
+.newUI .query-plan-graph .node-body {
+  font-size: 12px; }
+
+.newUI .query-plan-graph .node-value {
+  border-radius: 4px;
+  border: 0;
+  background-color: #f2f2f2;
+  margin: 8px 16px 4px; }
+
+.newUI .query-plan-graph .node-value .value {
+  background: #1a6ce7;
+  border-radius: 0 4px 4px 0; }
+
+.newUI .node.selected > rect {
+  stroke: #1a6ce7;
+  stroke-width: 2px;
+  fill: none; }
+
+.edge-tooltip {
+  line-height: 1;
+  font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  padding: 12px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+
+.edge-tooltip:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #4a4a4a;
+  border-width: 8px;
+  margin-top: -8px; }
+
+.node-header-group * {
+  font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: normal;
+  font-size: 13px !important; }
+
+.node-header-group .node-name {
+  font-weight: 600; }
+
+.node-header-group .node-exec-percent {
+  text-anchor: end; }
+
+.node-detail-group .node-description {
+  font-size: 11px !important;
+  font-weight: 400;
+  fill: #9b9b9b !important; }
+
+.node-exec-group rect {
+  stroke: #efefef !important; }
+
+.node-exec-group .node-exec-value {
+  stroke: none !important;
+  fill: #ffa742 !important; }
+</style><style type="text/css">.Dropdown-root {
+  position: relative; }
+
+.Dropdown-control {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  padding: 8px 52px 8px 10px;
+  transition: all 200ms ease; }
+
+.Dropdown-control:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06); }
+
+.Dropdown-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  content: ' ';
+  display: block;
+  height: 0;
+  margin-top: -ceil(2.5);
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  width: 0; }
+
+.is-open .Dropdown-arrow {
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px; }
+
+.Dropdown-menu {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch; }
+
+.Dropdown-menu .Dropdown-group > .Dropdown-title {
+  padding: 8px 10px;
+  color: #333333;
+  font-weight: bold;
+  text-transform: capitalize; }
+
+.Dropdown-option {
+  box-sizing: border-box;
+  color: rgba(51, 51, 51, 0.8);
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px; }
+
+.Dropdown-option:last-child {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px; }
+
+.Dropdown-option:hover {
+  background-color: #f2f9fc;
+  color: #333; }
+
+.Dropdown-option.is-selected {
+  background-color: #f2f9fc;
+  color: #333; }
+
+.Dropdown-noresults {
+  box-sizing: border-box;
+  color: #ccc;
+  cursor: default;
+  display: block;
+  padding: 8px 10px; }
+</style><style type="text/css">b, strong {
+  font-weight: 600 !important; }
+
+.step-bar {
+  font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  line-height: 2.2;
+  color: #a6a6a6;
+  padding-left: 12px; }
+  .step-bar .step-bar-step {
+    display: inline; }
+  .step-bar .step-bar-step.active {
+    color: #000;
+    text-decoration: none !important;
+    cursor: default; }
+  .step-bar .step-bar-step {
+    cursor: pointer; }
+  .step-bar .step-bar-step:hover {
+    text-decoration: underline; }
+  .step-bar .step-bar-step + span {
+    padding: 0 4px; }
+</style><style type="text/css">b,
+strong {
+  font-weight: 600 !important; }
+
+.step-toggle {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  white-space: nowrap;
+  color: #4a4a4a;
+  background-color: #fbfbfb;
+  border: 1px solid lightGrey;
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* I'm so sorry */ }
+
+.step-toggle-step {
+  padding: 0 5px;
+  text-align: center;
+  font-size: 12px;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center; }
+  .step-toggle-step--active {
+    color: black;
+    font-weight: 600; }
+  .step-toggle-step:hover {
+    color: black;
+    cursor: default; }
+
+.step-toggle-overlay {
+  position: absolute;
+  /* Set opacity without affecting rest of element */
+  background-color: rgba(219, 232, 252, 0.3);
+  border-radius: 48px;
+  border: 1px solid #0061ff;
+  top: -1px;
+  transition: 200ms ease-out; }
+
+.StepToggle2 {
+  align-items: stretch;
+  background: #fafafa;
+  border: 1px solid #e2e3e5;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #65676c;
+  display: inline-flex;
+  font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  font-weight: 400;
+  height: 24px;
+  position: relative;
+  white-space: nowrap;
+  z-index: 1; }
+
+.StepToggle2 .selector {
+  background: #f2f2f2;
+  border: 1px solid #e2e3e5;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 24px !important;
+  left: 0;
+  position: absolute;
+  top: -1px;
+  transition: left 200ms ease-out, width 200ms ease-out; }
+
+.StepToggle2 .step {
+  cursor: pointer;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 0 12px;
+  position: relative;
+  vertical-align: middle;
+  z-index: 1;
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  color: #65676c; }
+
+.StepToggle2 .step.active {
+  color: #2c2f34;
+  cursor: default; }
+</style><style type="text/css">b,
+strong {
+  font-weight: 600 !important; }
+
+.query-plan {
+  width: 100%;
+  height: 100%; }
+  .query-plan > div {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid #c6c6c6; }
+  .query-plan.newUI {
+    position: relative; }
+  .query-plan.newUI > div {
+    border-right: 0; }
+  .query-plan .query-plan-graph-container {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+  .query-plan .step-bar {
+    border-bottom: 1px solid #ebebeb;
+    z-index: 1; }
+  .query-plan .query-plan-graph {
+    box-sizing: border-box;
+    position: absolute;
+    top: 27px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; }
+  .query-plan--notFlagged .query-plan-graph {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; }
+  .query-plan .query-plan-graph-container.single-step .query-plan-graph {
+    top: 0px; }
+  .query-plan .query-plan-detail {
+    width: 350px;
+    height: 100%;
+    float: right;
+    overflow: auto; }
+  .query-plan .zoom-controls {
+    position: absolute;
+    bottom: 12px;
+    right: 12px; }
+  .query-plan .empty-query-plan {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #808080;
+    font-size: 16px; }
+  .query-plan .Dropdown-root {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 100px;
+    font-family: "Inter", "system-ui", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 13px; }
+  .query-plan .Dropdown-control {
+    padding-right: 30px;
+    border-radius: 3px;
+    -moz-border-radius: 3px; }
+  .query-plan .node-list {
+    top: 12px;
+    right: 12px;
+    position: absolute; }
+  .query-plan .controlArea {
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 24px;
+    z-index: 1; }
+  .query-plan .control {
+    align-items: center;
+    display: inline-flex;
+    height: 24px;
+    margin-left: 8px;
+    width: 40px; }
+  .query-plan .control:first-child {
+    margin-left: 0; }
+</style><style type="text/css">/* jsxstyle */</style><link rel="prefetch" as="script" href="https://app.snowflake.com/static/route.ReplicationGroupsView-86b0390791a43cc7c295.js"><style media=""></style></head><body style="color: var(--inverse-gray85); font-family: Inter, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 14px;"><div id="reactRoot"><div class="content"><div class="ar as at au av aw ax ay az b0 b1    b2        b3 b4 b5 b6 b7 b8 b9 ba" role="complementary" aria-labelledby="__js10841"><a class="  bb         bc bd" role="link" tabindex="0" id="__js10841">Skip to main content</a><a class="dt   bb         bc bd" role="link" tabindex="0">Skip to editor</a><a class="dt   bb         bc bd" role="link" tabindex="0">Skip to results</a></div><div class="al am hp bf            bg"><div class="hp af ai hn            an bi jd"><div class="hp hn            bk"></div></div><div class="bm af hi hx hw hv aq ai            an cl al hl"><div class="bm la           "><div class="           cl"><header class="sb            sc eq sd co" role="banner"><div class="ae af ag ah ai aj            ak al am an ao"><h1 class="hc hb cb ha hv hw hi hx hy hz   bb i0         i1 i2" role="heading" aria-level="1">Worksheets</h1></div><div class="j4 af cf hd ai bf            b3 d9 b5 bx an"><a href="https://app.snowflake.com/houdric/vq62433/worksheets" class="cb g4 j2 hc ht gl   bb         bc h9 rh" role="link" tabindex="0" data-testid="backToHomePageButton"><div class="ds se sf sg           b3 b7 dn bx jq jr"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="h6 it du dv dw sh            ea dy jc" role="img" aria-label="Home"><path d="M10 4L6 8L10 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Worksheets</div></a><div class="j4 h7 ht cf            b3 d9 b5 cl jm g1"><div class="si ht            co jo rh jm"><div class="custom-scrollbar            b3 d9 b5 sj"><div class="           g1 f1"><div class="dg   i0 bb         b3 co b5" role="tablist" tabindex="0" aria-orientation="horizontal" aria-label="Active worksheets" aria-activedescendant="__js11343_4nyHe3jiRla"><div class="mb ma eh ei ds bm tr hi cg ch hv wh  wi wj          b3 b7 dn bs bx h9 cl eq t3 cs t0 tk t2 co bc jq jr" role="tab" aria-selected="false" id="__js11343_4nyHe3jiRla" aria-label="2023-08-18 12:59pm"><div class="           b3 d9 b5 al"><div class="           al am dr ao" id="__js11537">2023-08-18 12:59pm</div></div></div><div class="mb ma eh ei ds bm tr hi cg ch hv wh  wi wj          b3 b7 dn bs bx h9 cl eq t3 cs t0 tk t2 co bc jq jr" role="tab" aria-selected="false" id="__js11343_omLbYaawpj" aria-label="2023-08-18 1:47pm"><div class="           b3 d9 b5 al"><div class="           al am dr ao" id="__js11540">2023-08-18 1:47pm</div></div></div><div class="mb ma eh ei ds bm tr hi cg ch hv wh  wi wj          b3 b7 gd bs bx h9 cl bg t3 cs t0 tk t2 co i9 ge gf" role="tab" aria-selected="true" id="__js11343_1wwABCa4YJl" aria-label="Bank_Czech_Data"><div class="           b3 d9 b5 al"><div class="           al am dr ao" id="__js11543">Bank_Czech_Data</div></div></div></div></div></div><div class="dg af ai bf            sk s7 an cz ew re h0"></div><div class="dg af ai sl            sm s7 an cz ew re h0"></div><div class="dg aq ai sl            sn s7 an cz ew re h0"></div><div class="ap dg af bf            so s7 an cz ew re h0"></div></div><div class="by bz c0 c1 eh ei ma mb c2 br c3 c4 c5 c6 c7 c8 c9 dg cb sp sq hc fd fe ff dh p4 p5 p6 p7 p8 p9 pa pb pc pd pe pf pg ph pi pj bb         oc cl bc b3 cm cn co sr cq cr cs ct cu cv rh h9" role="button" tabindex="0" aria-disabled="false" id="__js11344" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            jq dy" role="img" aria-label="Open new worksheet tab"><path d="M8 2V14M14 8H2" stroke-width="2"></path></svg></span></div></div><div class="          " aria-hidden="true"><label class="          " aria-label="Import SQL"><input accept=".sql" name="Import SQL" type="file" class="           l9"></label></div></div></header><div class="ss st jb            b3 b4 b5"><div class="n8            g1 jm"><div class="query-project bm            b3 d9"><div class="al am bm n8 ht bf            b3 su n3"><div class="ja sv sw            bk bu sx cr sy"><main class="al am bm bf            b3 b4 b6" role="main"><div class="fb sz            b3 b4 b5 cn c3 iu p3"><div class="hi fe ff hv            b3 d9 b5 bx g2"><div class="ht e5            g1 jm"><div class="dg ht bf            b3 d9 b5 bx g2 mu mv"><div class="ja ht            b3 d9 b5 bx g1 jm md"><div class="it            b3 d9 b5 bx"><div class="id ie if ig f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc c9 dg fd fe ff om ih ii ij ik il im in io fw bb         ip cl f1 cm cn co cp cq cr cs iq ir is" role="button" tabindex="0" aria-disabled="false" aria-label="show or hide filter" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp"><span class="           b3"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M7 11.5H13.5" stroke="var(--inverse-gray70)" stroke-linecap="round"></path><path d="M2.5 4.5H13.5" stroke="var(--inverse-gray70)" stroke-linecap="round"></path><circle fill="var(--inverse-gray00)" cx="11.5" cy="4.5" r="2" stroke="var(--inverse-gray70)" class="           t0 t1 t2 t3"></circle><circle fill="var(--inverse-gray00)" cx="4.5" cy="11.5" r="2" stroke="var(--inverse-gray70)"></circle></svg></span></span></div></div><div class="dg ht            g1 jm co"><div class="custom-scrollbar ja ht hi t4 t5 hv            b3 d9 b5 bp da sj"></div><div class="bm af ai sl            t6 s7 an cz ew re h0"></div><div class="bm aq ai sl            t7 s7 an cz ew re h0"></div></div><div class="t8            b3 d9 b5 bx cn"></div></div>  </div></div><div class="           rh h9"><div class="           b3 d9 b5 bx"><div class="id ie if ig f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc he dg fd fe ff ih ii ij ik il im in io fw bb         t9 cl bc f1 b7 cn co cp cq cr cs iq ir is" role="button" tabindex="0" aria-disabled="false" data-testid="roleAndWarehouseSelector" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="ta du dv lz dw            ef dy" role="presentation"><path d="M7.5 0V2.5H8.5V0H7.5ZM13.0039 4.5V12.5H14.0039V4.5H13.0039ZM11.5039 14H4.50391V15H11.5039V14ZM3.00391 12.5V4.5H2.00391V12.5H3.00391ZM4.50391 14C3.67548 14 3.00391 13.3284 3.00391 12.5H2.00391C2.00391 13.8807 3.12319 15 4.50391 15V14ZM13.0039 12.5C13.0039 13.3284 12.3323 14 11.5039 14V15C12.8846 15 14.0039 13.8807 14.0039 12.5H13.0039ZM11.5039 3C12.3323 3 13.0039 3.67157 13.0039 4.5H14.0039C14.0039 3.11929 12.8846 2 11.5039 2V3ZM4.50391 2C3.12319 2 2.00391 3.11929 2.00391 4.5H3.00391C3.00391 3.67157 3.67548 3 4.50391 3V2ZM4.50391 3H8.00391V2H4.50391V3ZM8.00391 3H11.5039V2H8.00391V3Z"></path><path d="M10.3398 12.0148C10.7537 12.0148 11.0938 11.6733 10.9766 11.2764C10.7058 10.3597 9.89042 9.03125 7.98885 9.03125C6.08727 9.03125 5.29418 10.3597 5.02342 11.2764C4.90618 11.6733 5.24635 12.0148 5.66019 12.0148H10.3398Z"></path><path d="M9.51562 6.5C9.51562 7.32843 8.84405 8 8.01562 8C7.1872 8 6.51562 7.32843 6.51562 6.5C6.51562 5.67157 7.1872 5 8.01562 5C8.84405 5 9.51562 5.67157 9.51562 6.5Z"></path></svg><span class="tb            d3 al dr eu ey">ACCOUNTADMIN</span><span class="tc hw dw            db"><svg width="16" height="16px" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="2" fill="var(--inverse-gray50)" stroke="none"></circle></svg></span><span class="tb            d3 al dr eu ey">AG_GD_LIST</span></span></div><div class="td           "></div><div class="id ie if ig f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc c9 dg fd fe ff ih ii ij ik il im in io fw bb         ip cl bc f1 b7 cn co cp cq cr cs iq ir is" role="button" tabindex="0" aria-disabled="false" data-testid="share-worksheet-button"><span class="           b3 cx bx cn ao cy cz cr cp">Share</span></div><div class="td           "></div><div class="te            bx f1"><div class="f2 f3 f4 f5 f6 m9 ma f9 c2 br c3 c4 fa c6 fb fc c9 dg fd fe ff fg fh fi fj fk fl fm fn fo fp fq fr fs ft fu fv fw tf bb         fx cl bc f1 cm cn co cp cq cr cs fy fz g0" role="button" tabindex="0" aria-disabled="false" aria-label="Run"><span class="           b3 cx bx cn ao cy cz cr cp"><svg role="img" width="12" height="12" aria-label="Run"><path viewBox="0 0 12 12" fill="currentcolor" d="M0 10.1315V1.86852C0 1.06982 0.890145 0.59343 1.5547 1.03647L7.75192 5.16795C8.34566 5.56377 8.34566 6.43623 7.75192 6.83205L1.5547 10.9635C0.890145 11.4066 0 10.9302 0 10.1315Z" transform="translate(2)"></path></svg></span></div><div class="aj            ic tg cp th cr"></div><div class="f2 f3 f4 f5 m8 f7 f8 mb c2 br c3 c4 fa bl fb c8 c9 dg fd ay az fg fh fi fj fk fl fm fn fo fp fq fr fs ft fu fv fw bb         fx cl bc f1 cm cn co cp cq cr cs fy fz g0" role="button" tabindex="0" aria-disabled="false" id="__js11354" aria-label="More run options" data-testid="worksheets-split-run-button" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            ea dy" role="img" aria-label="More options"><path d="M12.1172 6.0609L8.11868 10.0566L4.11719 6.05664" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></div></div></div></div></div></div><div class="ti bf           "><div class="split-pane-container bm            co"><div class="bm            tj wg cr"><div class="bm            b3 d9 b5 co tl"><div class="bm bf            b3 b4 b5"><div class="top-pane tm tn            b3 bx rh h9"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc he dg fd fe e5 p4 p5 p6 p7 p8 p9 pa pb pc pd pe pf pg ph pi pj bb         oc cl bc f1 b7 cn co cp cq cr cs dn cu cv to" role="button" tabindex="0" aria-disabled="false" data-testid="databaseAndSchemaSelector" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp">BANK.PUBLIC<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="k8 du dv dw            ee dy tp" role="presentation"><path d="M9.91938 6H6.08062C5.24212 6 4.77595 6.96993 5.29976 7.6247L7.21913 10.0239C7.61946 10.5243 8.38054 10.5243 8.78087 10.0239L10.7002 7.62469C11.2241 6.96993 10.7579 6 9.91938 6Z"></path></svg></span></div><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc he dg dp fd fe e5 p4 p5 p6 p7 p8 p9 pa pb pc pd pe pf pg ph pi pj bb         oc cl bc f1 b7 cn co cp cq cr cs d4 cu cv to" role="button" tabindex="0" aria-disabled="false" data-testid="query-settings" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp">Settings<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="k8 du dv dw            ey dy tp" role="presentation"><path d="M9.91938 6H6.08062C5.24212 6 4.77595 6.96993 5.29976 7.6247L7.21913 10.0239C7.61946 10.5243 8.38054 10.5243 8.78087 10.0239L10.7002 7.62469C11.2241 6.96993 10.7579 6 9.91938 6Z"></path></svg></span></div><div class="tq tr            b3 d9 b5 g2"><div class="           b3 d9 b5 bx"><div class="xb jl            xc t0 ew cr"><div class="  bb         jc" role="button" tabindex="0" data-testid="query-history-popover" aria-expanded="false" aria-haspopup="true"><div class="f9 f8 f6 f7 jt tt hi ay az hv tu tv           b3 d9 b5 bx cn bc cl al dr ao b6 d4"><div class="ds e5            eu ey">Latest Version</div><div class="k8            b3 d9 b5 tp"><svg viewBox="0 0 8 5" class="tw td           " role="presentation"><path fill="currentcolor" d="M3.19126 4.38799L1.15503 1.58817C0.674329 0.927202 1.14648 0 1.96377 0H6.03623C6.85352 0 7.32567 0.927202 6.84497 1.58817L4.80874 4.38799C4.40939 4.93709 3.59061 4.93709 3.19126 4.38799Z"></path></svg></div></div></div></div></div></div><div class="w2            b3 bx"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 c5 c6 c7 c8 c9 dg fd fe ff p4 p5 p6 p7 p8 p9 pa pb pc pd pe pf pg ph pi pj bb         oc cl bc f1 cm cn co cp cq cr cs ct cu cv" role="button" tabindex="0" aria-describedby="__js11411" id="__js11412" aria-disabled="false"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d7 dy" role="img" aria-label="Search Worksheet"><circle cx="6.5" cy="6.5" r="4"></circle><path d="M9.5 9.5L13.0355 13.0355" stroke-linecap="round"></path></svg></span></div></div></div><div class="cm-s-sql-container tx            b3"><div class="bm ty            g1 jm" data-testid="cm6-query-code-editor"><div class=" bf bm"><div class="cm-editor ͼ1 ͼ2 ͼ4 ͼ7"><div aria-live="polite" style="position: fixed; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 9242px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">999</div><div class="cm-gutterElement" style="height: 18px; margin-top: 7672px;">426</div><div class="cm-gutterElement" style="height: 18px;">427</div><div class="cm-gutterElement" style="height: 18px;">428</div><div class="cm-gutterElement" style="height: 18px;">429</div><div class="cm-gutterElement" style="height: 18px;">430</div><div class="cm-gutterElement" style="height: 18px;">431</div><div class="cm-gutterElement" style="height: 18px;">432</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 18px;">433</div><div class="cm-gutterElement" style="height: 18px;">434</div><div class="cm-gutterElement" style="height: 18px;">435</div><div class="cm-gutterElement" style="height: 18px;">436</div><div class="cm-gutterElement" style="height: 18px;">437</div><div class="cm-gutterElement" style="height: 18px;">438</div><div class="cm-gutterElement" style="height: 18px;">439</div><div class="cm-gutterElement" style="height: 18px;">440</div><div class="cm-gutterElement" style="height: 18px;">441</div><div class="cm-gutterElement" style="height: 18px;">442</div><div class="cm-gutterElement" style="height: 18px;">443</div><div class="cm-gutterElement" style="height: 18px;">444</div><div class="cm-gutterElement" style="height: 18px;">445</div><div class="cm-gutterElement" style="height: 18px;">446</div><div class="cm-gutterElement" style="height: 18px;">447</div><div class="cm-gutterElement" style="height: 18px;">448</div><div class="cm-gutterElement" style="height: 18px;">449</div><div class="cm-gutterElement" style="height: 18px;">450</div><div class="cm-gutterElement" style="height: 18px;">451</div><div class="cm-gutterElement" style="height: 18px;">452</div><div class="cm-gutterElement" style="height: 18px;">453</div><div class="cm-gutterElement" style="height: 18px;">454</div><div class="cm-gutterElement" style="height: 18px;">455</div><div class="cm-gutterElement" style="height: 18px;">456</div><div class="cm-gutterElement" style="height: 18px;">457</div><div class="cm-gutterElement" style="height: 18px;">458</div><div class="cm-gutterElement" style="height: 18px;">459</div><div class="cm-gutterElement" style="height: 18px;">460</div><div class="cm-gutterElement" style="height: 18px;">461</div><div class="cm-gutterElement" style="height: 18px;">462</div><div class="cm-gutterElement" style="height: 18px;">463</div><div class="cm-gutterElement" style="height: 18px;">464</div><div class="cm-gutterElement" style="height: 18px;">465</div><div class="cm-gutterElement" style="height: 18px;">466</div><div class="cm-gutterElement" style="height: 18px;">467</div><div class="cm-gutterElement" style="height: 18px;">468</div><div class="cm-gutterElement" style="height: 18px;">469</div><div class="cm-gutterElement" style="height: 18px;">470</div><div class="cm-gutterElement" style="height: 18px;">471</div><div class="cm-gutterElement" style="height: 18px;">472</div><div class="cm-gutterElement" style="height: 18px;">473</div><div class="cm-gutterElement" style="height: 18px;">474</div><div class="cm-gutterElement" style="height: 18px;">475</div><div class="cm-gutterElement" style="height: 18px;">476</div><div class="cm-gutterElement" style="height: 18px;">477</div><div class="cm-gutterElement" style="height: 18px;">478</div><div class="cm-gutterElement" style="height: 18px;">479</div><div class="cm-gutterElement" style="height: 18px;">480</div><div class="cm-gutterElement" style="height: 18px;">481</div><div class="cm-gutterElement" style="height: 18px;">482</div><div class="cm-gutterElement" style="height: 18px;">483</div><div class="cm-gutterElement" style="height: 18px;">484</div><div class="cm-gutterElement" style="height: 18px;">485</div><div class="cm-gutterElement" style="height: 18px;">486</div><div class="cm-gutterElement" style="height: 18px;">487</div><div class="cm-gutterElement" style="height: 18px;">488</div><div class="cm-gutterElement" style="height: 18px;">489</div><div class="cm-gutterElement" style="height: 18px;">490</div><div class="cm-gutterElement" style="height: 18px;">491</div><div class="cm-gutterElement" style="height: 18px;">492</div><div class="cm-gutterElement" style="height: 18px;">493</div><div class="cm-gutterElement" style="height: 18px;">494</div><div class="cm-gutterElement" style="height: 18px;">495</div><div class="cm-gutterElement" style="height: 18px;">496</div><div class="cm-gutterElement" style="height: 18px;">497</div><div class="cm-gutterElement" style="height: 18px;">498</div><div class="cm-gutterElement" style="height: 18px;">499</div><div class="cm-gutterElement" style="height: 18px;">500</div><div class="cm-gutterElement" style="height: 18px;">501</div><div class="cm-gutterElement" style="height: 18px;">502</div><div class="cm-gutterElement" style="height: 18px;">503</div><div class="cm-gutterElement" style="height: 18px;">504</div><div class="cm-gutterElement" style="height: 18px;">505</div><div class="cm-gutterElement" style="height: 18px;">506</div><div class="cm-gutterElement" style="height: 18px;">507</div><div class="cm-gutterElement" style="height: 18px;">508</div><div class="cm-gutterElement" style="height: 18px;">509</div><div class="cm-gutterElement" style="height: 18px;">510</div><div class="cm-gutterElement" style="height: 18px;">511</div><div class="cm-gutterElement" style="height: 18px;">512</div></div><div class="cm-gutter"><div class="cm-gutterElement executed-line" style="height: 0px; visibility: hidden; pointer-events: none;"></div><div class="cm-gutterElement executed-line cm-activeLineGutter" style="height: 18px; margin-top: 7798px;"></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content cm-lineWrapping" style="tab-size: 4;" role="textbox" aria-multiline="true" aria-autocomplete="list" data-language="sql" aria-label="worksheet" tabindex="0"><div contenteditable="false" style="height: 7668px;"></div><div class="cm-line">   <span class="tok-keyword">GROUP</span> <span class="tok-keyword">BY</span> <span class="tok-number">1</span><span class="tok-punctuation">,</span><span class="tok-number">2</span><span class="tok-punctuation">,</span><span class="tok-number">3</span></div><div class="cm-line">   <span class="tok-keyword">ORDER</span> <span class="tok-keyword">BY</span> <span class="tok-number">1</span><span class="tok-punctuation">,</span><span class="tok-number">2</span><span class="tok-punctuation">,</span><span class="tok-number">3</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> LTD <span class="tok-keyword">ON</span> TXN.ACCOUNT_ID <span class="tok-operator">=</span> LTD.ACCOUNT_ID <span class="tok-keyword">AND</span> TXN.<span class="tok-typeName">DATE</span> <span class="tok-operator">=</span> LTD.LATEST_TXN_DATE</div><div class="cm-line"><span class="tok-keyword">WHERE</span> TXN.TYPE <span class="tok-operator">=</span> <span class="tok-string">'Credit'</span> <span class="tok-comment">-- this is the assumptions am having : month end txn data is credit</span></div><div class="cm-line"><span class="tok-keyword">ORDER</span> <span class="tok-keyword">BY</span> TXN.ACCOUNT_ID<span class="tok-punctuation">,</span>LTD.TXN_YEAR<span class="tok-punctuation">,</span>LTD.TXN_MONTH;</div><div class="cm-line"><br></div><div class="cm-activeLine cm-line"><span class="tok-keyword">select</span> <span class="tok-operator">*</span> <span class="tok-keyword">from</span> ACC_LATEST_TXNS_WITH_BALANCE;</div><div class="cm-line"><span class="tok-comment">-------------------------------------------------------------------------------------------</span></div><div class="cm-line"><span class="tok-keyword">CREATE</span> <span class="tok-keyword">OR</span> <span class="tok-builtin">REPLACE</span> <span class="tok-keyword">TABLE</span> BANKING_KPI <span class="tok-keyword">AS</span></div><div class="cm-line"><span class="tok-keyword">SELECT</span>  ALWB.TXN_YEAR <span class="tok-punctuation">,</span> ALWB.TXN_MONTH<span class="tok-punctuation">,</span>T.BANK<span class="tok-punctuation">,</span>A.ACCOUNT_TYPE<span class="tok-punctuation">,</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-builtin">COUNT</span><span class="tok-punctuation">(</span><span class="tok-keyword">DISTINCT</span> ALWB.ACCOUNT_ID<span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> TOT_ACCOUNT<span class="tok-punctuation">,</span> </div><div class="cm-line"><span class="tok-builtin">COUNT</span><span class="tok-punctuation">(</span><span class="tok-keyword">DISTINCT</span> T.TRANS_ID<span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> TOT_TXNS<span class="tok-punctuation">,</span></div><div class="cm-line"><span class="tok-builtin">COUNT</span><span class="tok-punctuation">(</span><span class="tok-keyword">CASE</span> <span class="tok-keyword">WHEN</span> T.TYPE <span class="tok-operator">=</span> <span class="tok-string">'Credit'</span> <span class="tok-keyword">THEN</span> <span class="tok-number">1</span> <span class="tok-keyword">END</span><span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> DEPOSIT_COUNT <span class="tok-punctuation">,</span></div><div class="cm-line"><span class="tok-builtin">COUNT</span><span class="tok-punctuation">(</span><span class="tok-keyword">CASE</span> <span class="tok-keyword">WHEN</span> T.TYPE <span class="tok-operator">=</span> <span class="tok-string">'Withdrawal'</span> <span class="tok-keyword">THEN</span> <span class="tok-number">1</span> <span class="tok-keyword">END</span><span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> WITHDRAWAL_COUNT<span class="tok-punctuation">,</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-builtin">SUM</span><span class="tok-punctuation">(</span>ALWB.BALANCE<span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> TOT_BALANCE<span class="tok-punctuation">,</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-builtin">ROUND</span><span class="tok-punctuation">(</span><span class="tok-punctuation">(</span>DEPOSIT_COUNT <span class="tok-operator">/</span> TOT_TXNS<span class="tok-punctuation">)</span> <span class="tok-operator">*</span> <span class="tok-number">100</span><span class="tok-punctuation">,</span><span class="tok-number">2</span><span class="tok-punctuation">)</span>  <span class="tok-keyword">AS</span> DEPOSIT_PERC <span class="tok-punctuation">,</span></div><div class="cm-line"><span class="tok-builtin">ROUND</span><span class="tok-punctuation">(</span><span class="tok-punctuation">(</span>WITHDRAWAL_COUNT <span class="tok-operator">/</span> TOT_TXNS<span class="tok-punctuation">)</span> <span class="tok-operator">*</span> <span class="tok-number">100</span><span class="tok-punctuation">,</span><span class="tok-number">2</span><span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> WITHDRAWAL_PERC <span class="tok-punctuation">,</span></div><div class="cm-line"><span class="tok-builtin">NVL</span><span class="tok-punctuation">(</span>TOT_BALANCE <span class="tok-operator">/</span> TOT_ACCOUNT<span class="tok-punctuation">,</span><span class="tok-number">0</span><span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> AVG_BALANCE<span class="tok-punctuation">,</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-builtin">ROUND</span><span class="tok-punctuation">(</span>TOT_TXNS<span class="tok-operator">/</span>TOT_ACCOUNT<span class="tok-punctuation">,</span><span class="tok-number">0</span><span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> TPA</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">FROM</span> <span class="tok-keyword">TRANSACTIONS</span> <span class="tok-keyword">AS</span> T</div><div class="cm-line"><span class="tok-keyword">INNER</span> <span class="tok-keyword">JOIN</span>  ACC_LATEST_TXNS_WITH_BALANCE <span class="tok-keyword">AS</span> ALWB <span class="tok-keyword">ON</span> T.ACCOUNT_ID <span class="tok-operator">=</span> ALWB.ACCOUNT_ID</div><div class="cm-line"><span class="tok-keyword">LEFT</span> <span class="tok-keyword">OUTER</span> <span class="tok-keyword">JOIN</span>  <span class="tok-keyword">ACCOUNT</span> <span class="tok-keyword">AS</span> A <span class="tok-keyword">ON</span> T.ACCOUNT_ID <span class="tok-operator">=</span> A.ACCOUNT_ID</div><div class="cm-line"><span class="tok-keyword">GROUP</span> <span class="tok-keyword">BY</span> <span class="tok-number">1</span><span class="tok-punctuation">,</span><span class="tok-number">2</span><span class="tok-punctuation">,</span><span class="tok-number">3</span><span class="tok-punctuation">,</span><span class="tok-number">4</span></div><div class="cm-line"><span class="tok-keyword">ORDER</span> <span class="tok-keyword">BY</span> <span class="tok-number">1</span><span class="tok-punctuation">,</span><span class="tok-number">2</span><span class="tok-punctuation">,</span><span class="tok-number">3</span><span class="tok-punctuation">,</span><span class="tok-number">4</span>;</div><div class="cm-line"><span class="tok-comment">----------------------------------------------------------------------------------------------------------</span></div><div class="cm-line"><span class="tok-keyword">select</span> TXN_YEAR<span class="tok-punctuation">,</span><span class="tok-builtin">COUNT</span><span class="tok-punctuation">(</span><span class="tok-operator">*</span><span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> TOTAL</div><div class="cm-line"><span class="tok-keyword">FROM</span> BANKING_KPI</div><div class="cm-line"><span class="tok-keyword">GROUP</span> <span class="tok-keyword">BY</span> <span class="tok-number">1</span></div><div class="cm-line"><span class="tok-keyword">ORDER</span> <span class="tok-keyword">BY</span> <span class="tok-number">2</span> <span class="tok-keyword">DESC</span>;</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">SELECT</span> <span class="tok-operator">*</span> <span class="tok-keyword">FROM</span> BANKING_KPI</div><div class="cm-line"><span class="tok-keyword">ORDER</span> <span class="tok-keyword">BY</span> txn_year<span class="tok-punctuation">,</span>BANK;</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">SELECT</span> <span class="tok-operator">*</span> <span class="tok-keyword">FROM</span> <span class="tok-keyword">TRANSACTIONS</span></div><div class="cm-line"><span class="tok-keyword">WHERE</span> ACCOUNT_ID <span class="tok-operator">=</span> <span class="tok-number">1</span></div><div class="cm-line"><span class="tok-keyword">ORDER</span> <span class="tok-keyword">BY</span> <span class="tok-typeName">DATE</span>;</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">SELECT</span> <span class="tok-operator">*</span> <span class="tok-keyword">FROM</span> BANKING_KPI</div><div class="cm-line"><span class="tok-keyword">where</span> txn_year <span class="tok-operator">=</span><span class="tok-number">2019</span>;</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">select</span> TXN_YEAR <span class="tok-keyword">AS</span> TXN_YEAR<span class="tok-punctuation">,</span>BANK<span class="tok-punctuation">,</span></div><div class="cm-line"><span class="tok-builtin">SUM</span><span class="tok-punctuation">(</span>AVG_BALANCE<span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> TOT_AVG_BALANCE</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">from</span> BANKING_KPI</div><div class="cm-line"><span class="tok-keyword">GROUP</span> <span class="tok-keyword">BY</span> <span class="tok-number">1</span><span class="tok-punctuation">,</span><span class="tok-number">2</span></div><div class="cm-line"><span class="tok-keyword">ORDER</span> <span class="tok-keyword">BY</span> TOT_AVG_BALANCE <span class="tok-keyword">DESC</span>;</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">SELECT</span> <span class="tok-operator">*</span> <span class="tok-keyword">FROM</span> <span class="tok-keyword">TRANSACTIONS</span></div><div class="cm-line"><span class="tok-keyword">WHERE</span> BANK <span class="tok-operator">=</span> <span class="tok-string">'Sky Bank'</span> <span class="tok-keyword">AND</span> ACCOUNT_ID <span class="tok-operator">=</span> <span class="tok-number">7745</span></div><div class="cm-line"><span class="tok-keyword">ORDER</span> <span class="tok-keyword">BY</span> <span class="tok-typeName">DATE</span> <span class="tok-punctuation">,</span>BANK;</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">SELECT</span> <span class="tok-operator">*</span> <span class="tok-keyword">FROM</span> <span class="tok-keyword">TRANSACTIONS</span></div><div class="cm-line"><span class="tok-keyword">WHERE</span> ACCOUNT_ID <span class="tok-operator">=</span> <span class="tok-number">1</span> <span class="tok-keyword">AND</span> <span class="tok-builtin">YEAR</span><span class="tok-punctuation">(</span><span class="tok-typeName">DATE</span><span class="tok-punctuation">)</span> <span class="tok-operator">=</span> <span class="tok-number">2019</span> <span class="tok-keyword">AND</span> <span class="tok-builtin">MONTH</span><span class="tok-punctuation">(</span><span class="tok-typeName">DATE</span><span class="tok-punctuation">)</span> <span class="tok-operator">=</span> <span class="tok-number">7</span>;</div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">SELECT</span> <span class="tok-operator">*</span> <span class="tok-keyword">FROM</span> ACC_LATEST_TXNS_WITH_BALANCE ;</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">select</span> <span class="tok-operator">*</span> <span class="tok-keyword">from</span> loan;</div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-keyword">SELECT</span> <span class="tok-keyword">DISTINCT</span> STATUS<span class="tok-punctuation">,</span><span class="tok-builtin">SUM</span><span class="tok-punctuation">(</span>AMOUNT<span class="tok-punctuation">)</span></div><div class="cm-line"><span class="tok-keyword">FROM</span> LOAN</div><div class="cm-line"><span class="tok-keyword">GROUP</span> <span class="tok-keyword">BY</span> <span class="tok-number">1</span></div><div class="cm-line"><span class="tok-keyword">ORDER</span> <span class="tok-keyword">BY</span> <span class="tok-number">1</span>;</div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-comment">----------------------------------------------------------------------------------------------</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="tok-comment">--NVL(TOT_DEPOSIT_AMOUNT,0)-NVL(TOT_WITHDRAWAL_AMOUNT,0) AS TOT_BALANCE,</span></div><div class="cm-line"><span class="tok-builtin">NVL</span><span class="tok-punctuation">(</span><span class="tok-punctuation">(</span>TOT_DEPOSIT_AMOUNT<span class="tok-operator">/</span>DEPOSIT_COUNT<span class="tok-punctuation">)</span><span class="tok-punctuation">,</span><span class="tok-number">0</span><span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> AVG_DEPOSIT_AMOUNT<span class="tok-punctuation">,</span> </div><div class="cm-line"><span class="tok-builtin">NVL</span><span class="tok-punctuation">(</span><span class="tok-punctuation">(</span>TOT_WITHDRAWAL_AMOUNT<span class="tok-operator">/</span>WITHDRAWAL_COUNT<span class="tok-punctuation">)</span><span class="tok-punctuation">,</span><span class="tok-number">0</span><span class="tok-punctuation">)</span> <span class="tok-keyword">AS</span> AVG_WITHDRAWAL_AMOUNT</div><div class="cm-line"><span class="tok-comment">--NVL((TOT_BALANCE / TOT_ACCOUNT),0) AS AVG_BALANCE</span></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink2;"><div class="cm-cursor cm-cursor-primary" style="left: 92.9875px; top: 7799.6px; height: 13.6px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"><div class="cm-selectionBackground" style="left: 92.9875px; top: 7799.59px; width: 359.85px; height: 13.61px;"></div></div></div></div></div></div></div></div></div></div><div class="al am be            tj wg cr"><div class="pz            tz" draggable="true"><div class="fb fa bm            b3 d9 b5 cl u0 c2 m3 c3 gr u1 ew cr" data-testid="query-project-bottom-pane-header"><div class="bf            b3 b4 b5"><div class="hi fe ff hv            b3 d9 b5 bx g1 jm md cl"><div class="           b3 d9 b5 bx u2"><div class="           b3 d9 b5 co"><div class="          "><div class="button-control ek ej eh ei u3 it u4 hi fe ff hv m2 u5  bb         b3 d4 mn cl bc cs u6 u7 u8 co h9 bx" role="button" tabindex="0" name="Tabresults" aria-pressed="true"><div class="it            b3 d9 b5 u9"><svg viewBox="0 0 16 16" class="h6 sh           " role="presentation"><desc>Table</desc><g fill="none" stroke="currentcolor" stroke-width="2"><path d="M10 12L14 8L10 4"></path><path d="M2 1V4C2 6.20914 3.79086 8 6 8H13"></path></g></svg></div><div class="           b3 d9 b5 bx"><div class="c9 ja            b7 al am dr ao jp eu ey">Results</div></div></div></div><div class="          "><div class="button-control ek ej eh ei u3 it u4 hi fe ff hv m2 u5  bb         b3 d4 mn cl bc cs u6 u7 u8 co h9 bx" role="button" tabindex="0" name="Tabchart" aria-pressed="false"><div class="it            b3 d9 b5 u9"><svg viewBox="0 0 16 16" class="h6 sh           " role="presentation"><desc>Chart</desc><path d="M1.19126 11.4118C0.866426 11.8585 0.965176 12.4839 1.41183 12.8087C1.85848 13.1336 2.4839 13.0348 2.80874 12.5882L1.19126 11.4118ZM6 6.5L6.6585 5.74742C6.44714 5.56248 6.16775 5.47495 5.88865 5.50622C5.60954 5.53749 5.35645 5.68469 5.19126 5.91183L6 6.5ZM10 10L9.3415 10.7526C9.55821 10.9422 9.84614 11.0292 10.1316 10.9913C10.4171 10.9534 10.6723 10.7943 10.8321 10.5547L10 10ZM14.8321 4.5547C15.1384 4.09517 15.0142 3.4743 14.5547 3.16795C14.0952 2.8616 13.4743 2.98577 13.1679 3.4453L14.8321 4.5547ZM2.80874 12.5882L6.80874 7.08817L5.19126 5.91183L1.19126 11.4118L2.80874 12.5882ZM5.3415 7.25258L9.3415 10.7526L10.6585 9.24742L6.6585 5.74742L5.3415 7.25258ZM10.8321 10.5547L14.8321 4.5547L13.1679 3.4453L9.16795 9.4453L10.8321 10.5547Z" fill="currentcolor"></path></svg></div><div class="           b3 d9 b5 bx"><div class="c9 ja            b7 al am dr ao jp eu ey">Chart</div></div></div></div></div></div><div class="bm            b3 d9 b5 g1 jm md"></div><div class="nq tc e5            b3 d9 b5 bx g2 cl u2"></div></div></div></div></div></div></div></div></main></div><div class="mi gq gr gs c2 br c3 c4 c7 ua ub c5 cb uc ud hc ue uf           ug db cl uh jo ob ui" data-testid="resize-drag-bar"></div><div class="uj uk            bk rh h9 bu sx cr sy"><div class="bm ul            n3 cl bs h9 t9"><aside class="bm            b3 b4 cl" role="complementary" data-section="LeftSideContentSection" aria-label="sidebar"><div class="bm            b3 b4 b5 am al" data-testid="worksheets-side-bar"><div class="fb            co iu c3"><div class="um m0 e3 hw j7            b3 b5 iv cl bx" role="tablist"><div class="iw ix iy gz            an j0 j1 t2 iz" style="left: 16px; width: 72px;"></div><div class="j2       j3    "><div class="c9 j4   i0 bb         bx i9 b3 dy j5 b7" role="tab" tabindex="0" aria-controls="__js11359_0panel" aria-disabled="false" aria-selected="true" id="__js11359_0">Databases</div></div><div class="j2       j3    "><div class="c9 j4 j6  i0 bb         bx bc b3 dy d4 b7" role="tab" tabindex="-1" aria-controls="__js11359_1panel" aria-disabled="false" aria-selected="false" id="__js11359_1">Worksheets</div></div></div></div><div class="hv            am al b3 g1 jm" role="tabpanel" aria-labelledby="__js11359_0" id="__js11359_0panel"><div class="n8            b3 b4 b5 am al g1 jm" data-testid="worksheets-object-explorer-sidebar"><div class="al am bm n8 ht bf            b3 ra n3"><div class="un uo up            bk tj sx cr sy"><div class="al am bm n8 ht bf            b3 b4 n3"><div class="uq ul ur            bk tj sx cr sy"><div class="bm bf            rh h9 md co"><div class="ar as at au bm            b3 b4 b5 cl am al g1 jm md"><div class=".custom-scrollbar ar as at au us ja hi tc e5 hv            am al b3 bx h9 jo" data-testid="worksheets-object-explorer-search-input-container"><div class="bm bf            b3 d9 b5 bx"><div class="ja bf            g1 js"><div class="f9 f8 c7 c8 c6 f6 f7 c5 ut uu           b3 d9 b5 bx da iu c3 kh c4 kg br kf c2 mn mg cl uv uw ux uy uz dy al am"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="dp du dv dw            jq ev ew bw dy h9" role="presentation"><circle cx="6.5" cy="6.5" r="4"></circle><path d="M9.5 9.5L13.0355 13.0355" stroke-linecap="round"></path></svg><input aria-label="All Objects" aria-invalid="false" autocomplete="off" formnovalidate="" placeholder="All Objects" type="text" class="mi gq gr gs c2 br c3 c4 c5 c6 c7 c8 he v0 m1 ff hv   bb i0     v1 v2    ic mm mn gd g1 i1 v3 v4" role="textbox" tabindex="0" value="" spellcheck="false" data-ms-editor="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            ey ev ew bw dy l9" role="presentation"><circle cx="8" cy="8" r="8"></circle><path d="M6 6L10 10" stroke-linecap="round" stroke="var(--level2-bg)"></path><path d="M10 6L6 10" stroke-linecap="round" stroke="var(--level2-bg)"></path></svg></div></div><div class="al am ut ja            bj rh h9 wa sr wb wc wd we wf"><div class="ut az            b3 n3"><div class="ut dp v5           "><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc c9 bm hi ay az hv p4 p5 p6 p7 p8 p9 pa pb pc pd pe pf pg ph pi pj bb         oc cl bc f1 cm cn co cp cq cr cs ct cu cv" role="button" tabindex="0" aria-disabled="false" id="__js11363" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d8 dy" role="img" aria-label="More options"><path d="M3 9.5C3.82843 9.5 4.5 8.82843 4.5 8C4.5 7.17157 3.82843 6.5 3 6.5C2.17157 6.5 1.5 7.17157 1.5 8C1.5 8.82843 2.17157 9.5 3 9.5Z"></path><path d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"></path><path d="M13 9.5C13.8284 9.5 14.5 8.82843 14.5 8C14.5 7.17157 13.8284 6.5 13 6.5C12.1716 6.5 11.5 7.17157 11.5 8C11.5 8.82843 12.1716 9.5 13 9.5Z"></path></svg></span></div></div></div></div></div></div><div class="n8            g1"><div class="bm            b3 b4 b5 co"><div class=".custom-scrollbar hi tc e5 hv            bk al b3 b4 g1 jm v6 co" data-testid="worksheets-object-explorer-tree-section"><div class="           db g1" data-testid="worksheets-object-explorer-tree"><div class="           co"><div class="bf           "><div class="f6 f7 f8 f9 ut v7 dp it ff cj wl          b3 n3 cl bc cs th v9 re va cm co"><div class="sh            h9 vb"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="vc du dv dw            dx ev ew bw dy vd" role="presentation"><path d="M6 4L10 8L6 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="  bb         b3 d9 b5 bx g1 al dr" role="button" tabindex="0" aria-expanded="false"><div class="it           "><div class="h6 om sh           "><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d8 ev ew bw dy" role="presentation"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.83183 2.46663C3.91909 2.79261 3 3.40757 3 4.5V11C3 12.272 3.82099 13.0387 4.80304 13.4596C5.76871 13.8734 6.97221 14 8 14C9.02779 14 10.2313 13.8734 11.197 13.4596C12.179 13.0387 13 12.272 13 11V4.5C13 3.38411 12.0866 2.76764 11.165 2.44551C10.2142 2.11318 9.0255 2 8 2C6.96956 2 5.78135 2.12752 4.83183 2.46663ZM5.16817 3.40837C4.33091 3.70739 4 4.09243 4 4.5C4 4.93741 4.33658 5.32094 5.16498 5.61049C5.96417 5.88983 7.0255 6 8 6C8.9745 6 10.0358 5.88983 10.835 5.61049C11.6634 5.32094 12 4.93741 12 4.5C12 4.06259 11.6634 3.67906 10.835 3.38951C10.0358 3.11017 8.9745 3 8 3C7.03044 3 5.96865 3.12248 5.16817 3.40837ZM4 11C4 11.728 4.42901 12.2113 5.19696 12.5404C5.98129 12.8766 7.02779 13 8 13C8.97221 13 10.0187 12.8766 10.803 12.5404C11.571 12.2113 12 11.728 12 11V6.15934C11.741 6.32407 11.4534 6.45369 11.165 6.55449C10.2142 6.88682 9.0255 7 8 7C6.9745 7 5.78583 6.88682 4.83502 6.55449C4.54664 6.45369 4.25905 6.32407 4 6.15934V11Z"></path></svg></div></div><div class="ds ve bf            al dr ao eu ey">AG_GRADATION_LIST</div></div><div class="           l9 vb"><div class="jt            b3 b4 b5 cn"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc ds jt fd hx hw wm wn          oc cl i9 f1 cm cn co ew cz re cs d4 oe of dy s7 wo h9" role="button" tabindex="-1" aria-disabled="true" data-testid="action-complete-button" aria-hidden="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            wp dy" role="img" aria-label="Pin item"><circle cx="8" cy="8" r="5.5"></circle><path d="M5.5 8.5L7 10L10.5 6.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc ds jt fd hx hw wm wn bb         oc cl bc f1 cm cn co ew cz re cs d4 cu cv cy wq wr h9" role="button" tabindex="0" aria-disabled="false" data-testid="icon-action-button"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            ef dy" role="img" aria-label="Pin item"><path d="M5.48449 1.5V1C5.20835 1 4.98449 1.22386 4.98449 1.5H5.48449ZM11.4845 1.5H11.9845C11.9845 1.22386 11.7606 1 11.4845 1V1.5ZM4.98449 1.5V7.5H5.98449V1.5H4.98449ZM3.48449 9H3V10H3.48449V9ZM14 9H13.4845V10H14V9ZM11.9845 7.5V1.5H10.9845V7.5H11.9845ZM11.4845 1H5.48449V2H11.4845V1ZM3 10H14V9H3V10ZM13.4845 9C12.6561 9 11.9845 8.32843 11.9845 7.5H10.9845C10.9845 8.88071 12.1038 10 13.4845 10V9ZM4.98449 7.5C4.98449 8.32843 4.31292 9 3.48449 9V10C4.8652 10 5.98449 8.88071 5.98449 7.5H4.98449Z"></path><path d="M4 2H13V1H4V2Z"></path><path d="M9.00684 10C9.00684 9.72386 8.78298 9.5 8.50684 9.5C8.23069 9.5 8.00684 9.72386 8.00684 10H9.00684ZM8.00684 10V15.0053H9.00684V10H8.00684Z"></path></svg></span></div></div></div><div class="k8 ws            b3 s7 an"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc c9 bm hi ay az hv wt wu bb         oc cl bc f1 cm cn co cp cq cr cs ct cu cv" role="button" tabindex="0" aria-disabled="false" id="__js11439" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d8 dy" role="img" aria-label="More options"><path d="M3 9.5C3.82843 9.5 4.5 8.82843 4.5 8C4.5 7.17157 3.82843 6.5 3 6.5C2.17157 6.5 1.5 7.17157 1.5 8C1.5 8.82843 2.17157 9.5 3 9.5Z"></path><path d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"></path><path d="M13 9.5C13.8284 9.5 14.5 8.82843 14.5 8C14.5 7.17157 13.8284 6.5 13 6.5C12.1716 6.5 11.5 7.17157 11.5 8C11.5 8.82843 12.1716 9.5 13 9.5Z"></path></svg></span></div></div></div></div></div><div class="           co"><div class="bf           "><div class="f6 f7 f8 f9 ut v7 dp it ff cj wl          b3 n3 cl bc cs th v9 re va cm co"><div class="sh            h9 vb"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="vc du dv dw            dx ev ew bw dy vd" role="presentation"><path d="M6 4L10 8L6 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="  bb         b3 d9 b5 bx g1 al dr" role="button" tabindex="0" aria-expanded="false"><div class="it           "><div class="h6 om sh           "><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d8 ev ew bw dy" role="presentation"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.83183 2.46663C3.91909 2.79261 3 3.40757 3 4.5V11C3 12.272 3.82099 13.0387 4.80304 13.4596C5.76871 13.8734 6.97221 14 8 14C9.02779 14 10.2313 13.8734 11.197 13.4596C12.179 13.0387 13 12.272 13 11V4.5C13 3.38411 12.0866 2.76764 11.165 2.44551C10.2142 2.11318 9.0255 2 8 2C6.96956 2 5.78135 2.12752 4.83183 2.46663ZM5.16817 3.40837C4.33091 3.70739 4 4.09243 4 4.5C4 4.93741 4.33658 5.32094 5.16498 5.61049C5.96417 5.88983 7.0255 6 8 6C8.9745 6 10.0358 5.88983 10.835 5.61049C11.6634 5.32094 12 4.93741 12 4.5C12 4.06259 11.6634 3.67906 10.835 3.38951C10.0358 3.11017 8.9745 3 8 3C7.03044 3 5.96865 3.12248 5.16817 3.40837ZM4 11C4 11.728 4.42901 12.2113 5.19696 12.5404C5.98129 12.8766 7.02779 13 8 13C8.97221 13 10.0187 12.8766 10.803 12.5404C11.571 12.2113 12 11.728 12 11V6.15934C11.741 6.32407 11.4534 6.45369 11.165 6.55449C10.2142 6.88682 9.0255 7 8 7C6.9745 7 5.78583 6.88682 4.83502 6.55449C4.54664 6.45369 4.25905 6.32407 4 6.15934V11Z"></path></svg></div></div><div class="ds ve bf            al dr ao eu ey">BANK</div></div><div class="           l9 vb"><div class="jt            b3 b4 b5 cn"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc ds jt fd hx hw wm wn          oc cl i9 f1 cm cn co ew cz re cs d4 oe of dy s7 wo h9" role="button" tabindex="-1" aria-disabled="true" data-testid="action-complete-button" aria-hidden="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            wp dy" role="img" aria-label="Pin item"><circle cx="8" cy="8" r="5.5"></circle><path d="M5.5 8.5L7 10L10.5 6.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc ds jt fd hx hw wm wn bb         oc cl bc f1 cm cn co ew cz re cs d4 cu cv cy wq wr h9" role="button" tabindex="0" aria-disabled="false" data-testid="icon-action-button"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            ef dy" role="img" aria-label="Pin item"><path d="M5.48449 1.5V1C5.20835 1 4.98449 1.22386 4.98449 1.5H5.48449ZM11.4845 1.5H11.9845C11.9845 1.22386 11.7606 1 11.4845 1V1.5ZM4.98449 1.5V7.5H5.98449V1.5H4.98449ZM3.48449 9H3V10H3.48449V9ZM14 9H13.4845V10H14V9ZM11.9845 7.5V1.5H10.9845V7.5H11.9845ZM11.4845 1H5.48449V2H11.4845V1ZM3 10H14V9H3V10ZM13.4845 9C12.6561 9 11.9845 8.32843 11.9845 7.5H10.9845C10.9845 8.88071 12.1038 10 13.4845 10V9ZM4.98449 7.5C4.98449 8.32843 4.31292 9 3.48449 9V10C4.8652 10 5.98449 8.88071 5.98449 7.5H4.98449Z"></path><path d="M4 2H13V1H4V2Z"></path><path d="M9.00684 10C9.00684 9.72386 8.78298 9.5 8.50684 9.5C8.23069 9.5 8.00684 9.72386 8.00684 10H9.00684ZM8.00684 10V15.0053H9.00684V10H8.00684Z"></path></svg></span></div></div></div><div class="k8 ws            b3 s7 an"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc c9 bm hi ay az hv wt wu bb         oc cl bc f1 cm cn co cp cq cr cs ct cu cv" role="button" tabindex="0" aria-disabled="false" id="__js11445" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d8 dy" role="img" aria-label="More options"><path d="M3 9.5C3.82843 9.5 4.5 8.82843 4.5 8C4.5 7.17157 3.82843 6.5 3 6.5C2.17157 6.5 1.5 7.17157 1.5 8C1.5 8.82843 2.17157 9.5 3 9.5Z"></path><path d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"></path><path d="M13 9.5C13.8284 9.5 14.5 8.82843 14.5 8C14.5 7.17157 13.8284 6.5 13 6.5C12.1716 6.5 11.5 7.17157 11.5 8C11.5 8.82843 12.1716 9.5 13 9.5Z"></path></svg></span></div></div></div></div></div><div class="           co"><div class="bf           "><div class="f6 f7 f8 f9 ut v7 dp it ff cj wl          b3 n3 cl bc cs th v9 re va cm co"><div class="sh            h9 vb"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="vc du dv dw            dx ev ew bw dy vd" role="presentation"><path d="M6 4L10 8L6 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="  bb         b3 d9 b5 bx g1 al dr" role="button" tabindex="0" aria-expanded="false"><div class="it           "><div class="h6 om sh           "><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d8 ev ew bw dy" role="presentation"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.79418 2.00438C6.93219 2.03676 6.10536 2.49805 5.64222 3.30022L1.94861 10.1066C1.23217 11.3475 1.65734 12.9342 2.89825 13.6507C4.13917 14.3671 5.72592 13.942 6.44236 12.701L7.96018 9.9041L9.53748 12.6989C10.2539 13.9398 11.8407 14.365 13.0816 13.6485C14.3225 12.9321 14.7477 11.3453 14.0312 10.1044L10.1898 3.29791C9.68316 2.42034 8.74123 1.95075 7.79418 2.00438ZM10.3068 5.53969C10.2596 5.66037 10.2028 5.77903 10.136 5.89469L8.52304 8.86692L10.4035 12.1989C10.8438 12.9615 11.819 13.2228 12.5816 12.7825C13.3442 12.3422 13.6055 11.367 13.1652 10.6044L10.3068 5.53969ZM6.50825 3.80022C6.94855 3.0376 7.92371 2.77631 8.68633 3.21661C9.44895 3.65691 9.71025 4.63207 9.26995 5.39469L5.57634 12.201C5.13604 12.9637 4.16088 13.225 3.39825 12.7847C2.63563 12.3444 2.37434 11.3692 2.81464 10.6066L6.50825 3.80022Z"></path></svg></div></div><div class="ds ve bf            al dr ao eu ey">SNOWFLAKE</div></div><div class="           l9 vb"><div class="jt            b3 b4 b5 cn"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc ds jt fd hx hw wm wn          oc cl i9 f1 cm cn co ew cz re cs d4 oe of dy s7 wo h9" role="button" tabindex="-1" aria-disabled="true" data-testid="action-complete-button" aria-hidden="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            wp dy" role="img" aria-label="Pin item"><circle cx="8" cy="8" r="5.5"></circle><path d="M5.5 8.5L7 10L10.5 6.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc ds jt fd hx hw wm wn bb         oc cl bc f1 cm cn co ew cz re cs d4 cu cv cy wq wr h9" role="button" tabindex="0" aria-disabled="false" data-testid="icon-action-button"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            ef dy" role="img" aria-label="Pin item"><path d="M5.48449 1.5V1C5.20835 1 4.98449 1.22386 4.98449 1.5H5.48449ZM11.4845 1.5H11.9845C11.9845 1.22386 11.7606 1 11.4845 1V1.5ZM4.98449 1.5V7.5H5.98449V1.5H4.98449ZM3.48449 9H3V10H3.48449V9ZM14 9H13.4845V10H14V9ZM11.9845 7.5V1.5H10.9845V7.5H11.9845ZM11.4845 1H5.48449V2H11.4845V1ZM3 10H14V9H3V10ZM13.4845 9C12.6561 9 11.9845 8.32843 11.9845 7.5H10.9845C10.9845 8.88071 12.1038 10 13.4845 10V9ZM4.98449 7.5C4.98449 8.32843 4.31292 9 3.48449 9V10C4.8652 10 5.98449 8.88071 5.98449 7.5H4.98449Z"></path><path d="M4 2H13V1H4V2Z"></path><path d="M9.00684 10C9.00684 9.72386 8.78298 9.5 8.50684 9.5C8.23069 9.5 8.00684 9.72386 8.00684 10H9.00684ZM8.00684 10V15.0053H9.00684V10H8.00684Z"></path></svg></span></div></div></div><div class="k8 ws            b3 s7 an"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc c9 bm hi ay az hv wt wu bb         oc cl bc f1 cm cn co cp cq cr cs ct cu cv" role="button" tabindex="0" aria-disabled="false" id="__js11451" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d8 dy" role="img" aria-label="More options"><path d="M3 9.5C3.82843 9.5 4.5 8.82843 4.5 8C4.5 7.17157 3.82843 6.5 3 6.5C2.17157 6.5 1.5 7.17157 1.5 8C1.5 8.82843 2.17157 9.5 3 9.5Z"></path><path d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"></path><path d="M13 9.5C13.8284 9.5 14.5 8.82843 14.5 8C14.5 7.17157 13.8284 6.5 13 6.5C12.1716 6.5 11.5 7.17157 11.5 8C11.5 8.82843 12.1716 9.5 13 9.5Z"></path></svg></span></div></div></div></div></div><div class="           co"><div class="bf           "><div class="f6 f7 f8 f9 ut v7 dp it ff cj wl          b3 n3 cl bc cs th v9 re va cm co"><div class="sh            h9 vb"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="vc du dv dw            dx ev ew bw dy vd" role="presentation"><path d="M6 4L10 8L6 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="  bb         b3 d9 b5 bx g1 al dr" role="button" tabindex="0" aria-expanded="false"><div class="it           "><div class="h6 om sh           "><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d8 ev ew bw dy" role="presentation"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.83183 2.46663C3.91909 2.79261 3 3.40757 3 4.5V11C3 12.272 3.82099 13.0387 4.80304 13.4596C5.76871 13.8734 6.97221 14 8 14C9.02779 14 10.2313 13.8734 11.197 13.4596C12.179 13.0387 13 12.272 13 11V4.5C13 3.38411 12.0866 2.76764 11.165 2.44551C10.2142 2.11318 9.0255 2 8 2C6.96956 2 5.78135 2.12752 4.83183 2.46663ZM5.16817 3.40837C4.33091 3.70739 4 4.09243 4 4.5C4 4.93741 4.33658 5.32094 5.16498 5.61049C5.96417 5.88983 7.0255 6 8 6C8.9745 6 10.0358 5.88983 10.835 5.61049C11.6634 5.32094 12 4.93741 12 4.5C12 4.06259 11.6634 3.67906 10.835 3.38951C10.0358 3.11017 8.9745 3 8 3C7.03044 3 5.96865 3.12248 5.16817 3.40837ZM4 11C4 11.728 4.42901 12.2113 5.19696 12.5404C5.98129 12.8766 7.02779 13 8 13C8.97221 13 10.0187 12.8766 10.803 12.5404C11.571 12.2113 12 11.728 12 11V6.15934C11.741 6.32407 11.4534 6.45369 11.165 6.55449C10.2142 6.88682 9.0255 7 8 7C6.9745 7 5.78583 6.88682 4.83502 6.55449C4.54664 6.45369 4.25905 6.32407 4 6.15934V11Z"></path></svg></div></div><div class="ds ve bf            al dr ao eu ey">SNOWFLAKE_SAMPLE_DATA</div></div><div class="           l9 vb"><div class="jt            b3 b4 b5 cn"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc ds jt fd hx hw wm wn          oc cl i9 f1 cm cn co ew cz re cs d4 oe of dy s7 wo h9" role="button" tabindex="-1" aria-disabled="true" data-testid="action-complete-button" aria-hidden="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            wp dy" role="img" aria-label="Pin item"><circle cx="8" cy="8" r="5.5"></circle><path d="M5.5 8.5L7 10L10.5 6.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc ds jt fd hx hw wm wn bb         oc cl bc f1 cm cn co ew cz re cs d4 cu cv cy wq wr h9" role="button" tabindex="0" aria-disabled="false" data-testid="icon-action-button"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            ef dy" role="img" aria-label="Pin item"><path d="M5.48449 1.5V1C5.20835 1 4.98449 1.22386 4.98449 1.5H5.48449ZM11.4845 1.5H11.9845C11.9845 1.22386 11.7606 1 11.4845 1V1.5ZM4.98449 1.5V7.5H5.98449V1.5H4.98449ZM3.48449 9H3V10H3.48449V9ZM14 9H13.4845V10H14V9ZM11.9845 7.5V1.5H10.9845V7.5H11.9845ZM11.4845 1H5.48449V2H11.4845V1ZM3 10H14V9H3V10ZM13.4845 9C12.6561 9 11.9845 8.32843 11.9845 7.5H10.9845C10.9845 8.88071 12.1038 10 13.4845 10V9ZM4.98449 7.5C4.98449 8.32843 4.31292 9 3.48449 9V10C4.8652 10 5.98449 8.88071 5.98449 7.5H4.98449Z"></path><path d="M4 2H13V1H4V2Z"></path><path d="M9.00684 10C9.00684 9.72386 8.78298 9.5 8.50684 9.5C8.23069 9.5 8.00684 9.72386 8.00684 10H9.00684ZM8.00684 10V15.0053H9.00684V10H8.00684Z"></path></svg></span></div></div></div><div class="k8 ws            b3 s7 an"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc c9 bm hi ay az hv wt wu bb         oc cl bc f1 cm cn co cp cq cr cs ct cu cv" role="button" tabindex="0" aria-disabled="false" id="__js11457" aria-expanded="false" aria-haspopup="true"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            d8 dy" role="img" aria-label="More options"><path d="M3 9.5C3.82843 9.5 4.5 8.82843 4.5 8C4.5 7.17157 3.82843 6.5 3 6.5C2.17157 6.5 1.5 7.17157 1.5 8C1.5 8.82843 2.17157 9.5 3 9.5Z"></path><path d="M8 9.5C8.82843 9.5 9.5 8.82843 9.5 8C9.5 7.17157 8.82843 6.5 8 6.5C7.17157 6.5 6.5 7.17157 6.5 8C6.5 8.82843 7.17157 9.5 8 9.5Z"></path><path d="M13 9.5C13.8284 9.5 14.5 8.82843 14.5 8C14.5 7.17157 13.8284 6.5 13 6.5C12.1716 6.5 11.5 7.17157 11.5 8C11.5 8.82843 12.1716 9.5 13 9.5Z"></path></svg></span></div></div></div></div></div></div></div></div></div></div></div></div><div class="mi gq gr gs c2 br c3 c4 vo c8 c6 vp vq vr ha hb vs vt           ug l9 cl vu jo ob ui" data-testid="resize-drag-bar"></div><div class="be vv            bk rh h9 tj sx cr sy"><div class="bm bf            rh h9 md" data-testid="worksheets-object-explorer-schema-card"></div></div></div></div><div class="mi gq gr gs c2 br c3 c4 vo c8 c6 vp vq vr ha hb vs uf           ug db cl vw jo ob ui" data-testid="resize-drag-bar"></div><div class="vx uo up            bk rh h9 tj sx cr sy"><div class="ar as at au bm            b3 b4 b5 am al g1 h9"><div class=".custom-scrollbar us hi e3 jl hv om            bk al rh h9 b3 d9 bx"><div class="  bb        " role="button" tabindex="0" aria-describedby="__js11395" id="__js11396"><div class="he            b7 d4 vy al am dr ao vu d7 d8">Pinned <div class="           d3 vz nt dx oa">(0)</div></div></div></div><div class=".custom-scrollbar cb ha hb hc n8 hi tc e5 hv bf            bk al g1"><div class="ha w0 tc e5            b3 bx"><div class="ds            d4 d7 d8">No pinned objects</div></div></div></div></div></div></div></div></div></aside></div></div></div></div></div><div class="fa j4 oi            b3 d9 b5 bx p3 c2 m3"><div class="e1            b3"><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 c5 c6 c7 c8 ds jt h7 m0 m1 lz ly p4 p5 p6 p7 p8 p9 pa pb pc pd pe pf pg ph pi pj bb         oc cl bc f1 cm cn co cp cq cr cs ct cu cv mc" role="button" tabindex="0" aria-describedby="__js11398" id="__js11399" aria-disabled="false"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            w1 dy" role="img" aria-label="Close sidebar"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.06694 2L4 2C3.94521 2 3.89145 2.00441 3.83905 2.01289C2.80442 2.12839 2 3.00597 2 4.07143L2 11.9286C2 12.994 2.80431 13.8715 3.83884 13.9871C3.8913 13.9956 3.94513 14 4 14H5L5.00347 14H11.9286C13.0726 14 14 13.0726 14 11.9286L14 4.07143C14 2.92741 13.0726 2 11.9286 2L4.07143 2L4.06694 2ZM6 13L11.9286 13C12.5203 13 13 12.5203 13 11.9286L13 4.07143C13 3.4797 12.5203 3 11.9286 3L6 3L6 13Z"></path></svg></span></div><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 c5 c6 c7 c8 ds jt h7 m0 m1 lz ly p4 p5 p6 p7 p8 p9 pa pb pc pd pe pf pg ph pi pj bb         oc cl bc f1 cm cn co cp cq cr cs ct cu cv mc" role="button" tabindex="0" aria-describedby="__js11401" id="__js11402" aria-disabled="false"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            w1 dy" role="img" aria-label="Close editor"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 11.9286C14 13.0726 13.0726 14 11.9286 14L4.07143 14C2.92741 14 2 13.0726 2 11.9286L2 4C2 3.94517 2.00441 3.89137 2.0129 3.83894C2.12845 2.80436 3.00601 2 4.07143 2L11.9286 2C12.994 2 13.8716 2.80437 13.9871 3.83896C13.9956 3.89138 14 3.94518 14 4L14 11.9286ZM13 11.9286C13 12.5203 12.5203 13 11.9286 13H4.07143C3.4797 13 3 12.5203 3 11.9286L3 7H13V11.9286Z"></path></svg></span></div><div class="by bz c0 c1 f6 f7 f8 f9 c2 br c3 c4 c5 c6 c7 c8 ds jt h7 m0 m1 lz ly p4 p5 p6 p7 p8 p9 pa pb pc pd pe pf pg ph pi pj bb         oc cl bc f1 cm cn co cp cq cr cs ct cu cv mc" role="button" tabindex="0" aria-describedby="__js11404" id="__js11405" aria-disabled="false"><span class="           b3 cx bx cn ao cy cz cr cp"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg" class="du dv dw            ox dy" role="img" aria-label="Open results"><path fill-rule="evenodd" clip-rule="evenodd" d="M14 12C14 12.0548 13.9956 12.1086 13.9871 12.161C13.8716 13.1956 12.994 14 11.9286 14L4.07143 14C3.006 14 2.12844 13.1956 2.0129 12.161C2.00441 12.1086 2 12.0548 2 12L2 4.07143C2 2.92741 2.92741 2 4.07143 2L11.9286 2C13.0726 2 14 2.92741 14 4.07143L14 12ZM3 9L13 9V4.07143C13 3.4797 12.5203 3 11.9286 3L4.07143 3C3.4797 3 3 3.4797 3 4.07143L3 9Z"></path></svg></span></div></div></div></div></div></div></div><div class="be af ai hn            an ho"><div class="al am be hn           "></div></div></div><div></div><div data-testid="error-container" class="errorManager-container hidden" role="region" aria-labelledby="error-container"><div class="ae af ag ah ai aj            ak al am an ao"><div id="error-container">Error</div></div><div class="errorManager-message">An unknown error occurred</div></div><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="ap aq            an" role="presentation" id="dragGhost"></div><div class="ae af ag ah ai aj            ak al am an ao" role="status" aria-atomic="true" aria-live="polite">The table was removed before loading finished</div><div class="          "><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11397" hidden="" aria-labelledby="__js11396"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11395">This is your personal space to save your favorite and frequently used objects across worksheets.</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11400" hidden="" aria-labelledby="__js11399"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11398">Close sidebar</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11403" hidden="" aria-labelledby="__js11402"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11401">Close editor</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11406" hidden="" aria-labelledby="__js11405"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11404">Open results</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11413" hidden="" aria-labelledby="__js11412"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11411">Search Worksheet</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11417" hidden="" aria-labelledby="__js11416"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11415">Find Previous</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11420" hidden="" aria-labelledby="__js11419"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11418">Find Next</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11423" hidden="" aria-labelledby="__js11422"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11421">Toggle replace</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11426" hidden="" aria-labelledby="__js11425"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11424">Toggle case match</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11429" hidden="" aria-labelledby="__js11428"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11427">Toggle regular expressions</div></div></div></div></div><div><div class="g6 g7 g8 g9            dy b8 ga gb al am" role="region" id="__js11432" hidden="" aria-labelledby="__js11431"><div class="gc            gd ge gf"><div class="gg gh gi gj f6 f7 f8 f9 c2 br c3 c4 fa bl fb fc gk ff gl fe ds g6 gm gn            go gp cl co"><div class="gg gq gr gs c2 br c3 c4 gt gu gv gw gx gy gz            do h0 an"><div class="h1 gq gr gs c2 br c3 c4 gt gu c7 gw h2 gy h3 h4 gz            an"></div></div><div class="           h5" role="tooltip" id="__js11430">Close</div></div></div></div></div></div><div class="ae af ag ah ai aj            ak al am an ao" role="status" aria-atomic="true" aria-live="polite"></div><div class="          "></div></div><script defer="defer" src="./Bank_Czech_Data - Snowflake_files/numeracy.230822-12-e64f65f24d.js.download"></script><canvas class="tabular-figures" style="display: none;"></canvas></body><editor-card style="position:absolute;top:0px;left:0px;z-index:auto;display: block !important"><div dir="ltr" style="all: initial;"><div style="color: initial; font: initial; font-palette: initial; font-synthesis: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation-composition: initial; animation: initial; app-region: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; math-depth: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: absolute; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-gutter: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-timeline-inset: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://hokifickgkhplphjiodbggjmoafhignh/fonts/fabric-icons.css"><div style="all: initial;"><template shadowrootmode="open"></template></div></div><div style="color: initial; font: initial; font-palette: initial; font-synthesis: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation-composition: initial; animation: initial; app-region: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; math-depth: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: absolute; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-gutter: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-timeline-inset: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://hokifickgkhplphjiodbggjmoafhignh/fonts/fabric-icons.css"></div><div id="editorNotificationContainer" style="color: initial; font: initial; font-palette: initial; font-synthesis: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation-composition: initial; animation: initial; app-region: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; bottom: 0px; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: flex; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-direction: column-reverse; flex-wrap: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; left: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: 1em; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; math-depth: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: fixed; quotes: initial; r: initial; resize: initial; right: 0px; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-gutter: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; top: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-timeline-inset: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"></div></div></editor-card></html>
